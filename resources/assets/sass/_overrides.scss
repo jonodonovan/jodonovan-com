@@ -1,0 +1,16 @@
+.navbar {
+    min-height: 40px;
+    height: 40px;
+}
+.navbar-default {
+    border: none;
+}
+.nav > li {
+    float: left;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.lead a {
+    text-decoration: underline;
+}
