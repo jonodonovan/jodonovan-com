@@ -63,10 +63,11 @@
         </div>
     </div>
     <div class="row" style="margin-bottom:50px;">
-        <div class="col-md-8 col-md-offset-2 text-center">
+        <div class="col-md-10 col-md-offset-1 text-center">
             <h4>Where you can find me online:</h4>
             <div style="position: relative; z-index: 2;">
                 <a href="{{url('weblog')}}" target="_self"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-pencil"></i> Weblog</buton></a>
+                <a href="{{url('community')}}" target="_self"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-users"></i> Community</buton></a>
                 <a href="https://linkedin.com/in/jodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-linkedin"></i> LinkedIn</buton></a>
                 <a href="https://github.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-github"></i> Github</buton></a>
                 <a href="https://twitter.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-twitter"></i> Twitter</buton></a>
@@ -74,6 +75,7 @@
                 {{-- <a href="https://plus.google.com/u/0/+JonathanODonovan" target="_blank"><buton class="btn btn-default btn-sm  style="margin:3px;"btn-twitter"><i class="fa fa-google-plus"></i> Google+</buton></a> --}}
                 <a href="https://reddit.com/user/JonODonovan/" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-reddit"></i> Reddit</buton></a>
                 <a href="mailto:&#69;&#77;&#65;&#73;&#76;&#64;&#74;&#79;&#68;&#79;&#78;&#79;&#86;&#65;&#78;&#46;&#67;&#79;&#77" target="_blank"><buton class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</buton></a>
+                <a href="https://verticalorbit.com" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><img src="/images/logo_v.png" name="verticalorbit" width="15px" border="0" class="hidden-xs"> Vertical Orbit</buton></a>
             </div>
         </div>
     </div>

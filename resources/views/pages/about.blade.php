@@ -4,71 +4,71 @@
 @section('body_style') @endsection
 
 @section('content')
-<div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;">
+<div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;font-weight: 100;font-size:1.2em;">
     <div class="row" style="margin-bottom:20px;">
         <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">About</h2>
+            <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-user" aria-hidden="true"></i> About</h2>
             <div class="row">
                 <div class="col-md-4">
                     <img src="/images/jon_and_cat.jpg" name="aboutme" width="100%" border="0" class="hidden-xs img-thumbnail">
                 </div>
                 <div class="col-xs-12 col-md-8">
-                    <div style="font-weight: 100;font-size: 1.7em;line-height:1.4;">
-                        <p>Jon O’Donovan is a professional marketer. He has experience with the following:</p>
+                    <div>
+                        <p>Jon O’Donovan is a professional marketer, graphic designer, and web developer. He has experience with the following:</p>
                             <ul>
+                                <li>print and digital advertising <i>(sem/ppc/display/social)</i> campaign execution and management <i>(Google Adwords certified)</i></li>
+                                <li>social media management</li>
+                                <li>10+ years of web analytics and click tracking <i>(Google Analytics & Tag Manager certified)</i></li>
+                                <li>10+ years of email marketing including list management, design and development. <i>(Mailchimp & Salesforce)</i></li>
+                                <li>search optimization <i>(SEO)</i> and local listing management (Google & Bing My Business)</li>
                                 <li>graphic design</li>
-                                <li>print and digital advertising</li>
-                                <li>social media</li>
-                                <li>web analytics and click tracking</li>
-                                <li>email marketing including list management, design and development</li>
                                 <li>customer service and reputation management</li>
-                                <li>search optimization and local listing management</li>
                                 <li>web design and development</li>
                             </ul>
                         <p>Jon has a degree in electronics and eight years of experience in IT as a systems and network administrator.</p>
-                        {{-- <p>Additionally, Jon is in the process of building <a href="https://verticalorbit.com/" target="_blank">Verctical Orbit</a>, his own marketing and development agency. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p> --}}
-                        <p>He also has over ten years experience as a web developer working with HTML, CSS, and PHP.</p>
-
+                        <p>Additionally, Jon runs his own markeitng consulting company <a href="https://verticalorbit.com/" target="_blank">Verctical Orbit</a>. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
+                        <p>He also has over ten years experience as a web developer working with HTML, CSS, and Laravel PHP framework.</p>
                     </div>
                 </div>
             </div>
+            <blockquote cite="https://www.linkedin.com/in/jodonovan/">
+                <i>"Jon is eager to listen, eager to learn about all aspects of the project he is working on, and quick to produce. Working with him was a pleasure." - <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Taylor</a></i>
+            </blockquote>
         </div>
 
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Professional Experience</h2>
-            {{-- <div style="margin:10px 0">
-                <h3><img src="/images/logo_v.png" name="verticalorbit" width="50px" border="0" class="hidden-xs"> Vertical Orbit</h3>
+            <div style="margin:10px 0">
+                <h3>Marketing Coordinator - Nortrax <small style="font-style: italic;">A John Deere company</small></h3>
+                <p style="font-style: italic;">Jun 2012 – Present</p>
+                <ul>
+                    <li>Planning, budgeting, and executing online advertising campaigns to improve lead generation and brand awareness utilizing Google Adwords and social media platforms.</li>
+                    <li>Manages, plans, and creates content across multiple social media platforms.</li>
+                    <li>Planning, designing, database/list management, coding, and analytical reporting for domestic and international promotional and transactional emails.</li>
+                    <li>Managing website analytics and click tracking through Google Analytics, Tag Manager, and Webmaster Tools</li>
+                    <li>Built and manages local online listings through Google and Bing maps for over 50 locations throughout NA.</li>
+                    <li>Print/digital graphic design for internal collateral and advertising. Adobe Photoshop, InDesign, and Illustrator.</li>
+                </ul>
+            </div>
+            <blockquote cite="https://www.linkedin.com/in/jodonovan">
+                <i>"Jon is a true talent. I first worked with him as an IT Specialist while I held the position of Corporate Event Coordinator. It didn’t matter what crazy idea for an event or meeting I asked him for he made it happen. Later, I was fortunate enough to have Jon join the marketing department where we worked side by side. He is an asset from web site development to social media. Oh, he also has a great sense of humor. In the 5 years I worked with Jon he made me laugh during the days when we needed it most. If you have the opportunity to hire Jon don’t hesitate." - <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Helene</a></i>
+            </blockquote>
+            <blockquote cite="https://www.linkedin.com/in/jodonovan">
+                <i>"I worked with Jon during my time at Nortrax where he helped me develop marketing material for recruiting efforts. He is helpful and knowledgeable on many areas of marketing but his knowledge of social media strategies and how to use them to benefit the business was by far the most I learned from him during my time at Nortrax. Jon is a team player and he would fit in well anywhere regardless of the work environment. He can work independently or in a group dynamic - you would not go wrong having him on your team." - <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Claudia</i>
+            </blockquote>
+            <div style="margin:10px 0">
+                <h3>Owner - <a href="https://verticalorbit.com" target="_blank">Vertical Orbit</a></h3>
                 <p style="font-style: italic;">Aug 2017 – Present</p>
                 <p>Marketing agency focused on:</p>
                 <ul>
                     <li>Social Media Advertising</li>
-                    <li>Search Advertising</li>
+                    <li>Search Advertising (SEM)</li>
                     <li>Website Analytics & Click Tracking</li>
-                    <li>Web & Web App Development</li>
+                    <li>Website & Web App Development</li>
                     <li>Email Marketing</li>
                     <li>Graphic Design</li>
-                </ul>
-            </div> --}}
-            <div style="margin:10px 0">
-                <h3>Marketing Coordinator - Nortrax <small style="font-style: italic;">A John Deere company</small></h3>
-                <p style="font-style: italic;">Jun 2014 – Present</p>
-                <ul>
-                    <li>Print/digital graphic design for internal collateral and advertising. Adobe Photoshop, InDesign, and Illustrator.</li>
-                    <li>Social media management <span style="font-style: italic;">(planning, execution, community management, and reporting for Facebook, Instagram, Twitter, LinkedIn, and YouTube).</span></li>
-                    <li>Email marketing including content creation and code.</li>
-                    <li>Digital advertising <span style="font-style: italic;">(social media platforms & Google search, display, and remarketing).</span></li>
-                    <li>Website management <span style="font-style: italic;">(development, maintenance, and analytical reporting).</span></li>
-                    <li>Reputation management and online customer support <span style="font-style: italic;">(Google and Bing business listings, social media, and other customer touch points).</span></li>
-                </ul>
-            </div>
-            <div style="margin:10px 0">
-                <h3>IT Specialist - Nortrax <small style="font-style: italic;">A John Deere company</small></h3>
-                <p style="font-style: italic;">Mar 2012 – Jun 2014</p>
-                <ul>
-                    <li>IT helpdesk support, project management, and systems management throughout North America.</li>
-                    <li>Subject-matter expert for IT ticketing/task/change management system, SharePoint 2007/10 sites, corporate computer backup systems, and computer, mobile, and cellular device inventory life cycle, from storage to recycling.</li>
                 </ul>
             </div>
             <div style="margin:10px 0">
@@ -82,8 +82,8 @@
                     <li>Web design & development</li>
                 </ul>
             </div>
-            <blockquote>
-                "Jonathan is one of those great IT people, responsive and knowledgeable. If he doesn't have a solution to the problem he researches and finds the solution. For Jonathan it's not just about IT, he will volunteer to led a hand wherever needed. I would recommend Jon, a great employee."
+            <blockquote cite="https://www.linkedin.com/in/jodonovan">
+                <i>"Jonathan is one of those great IT people, responsive and knowledgeable. If he doesn't have a solution to the problem he researches and finds the solution. For Jonathan it's not just about IT, he will volunteer to led a hand wherever needed. I would recommend Jon, a great employee." <br> - <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Laura</a></i>
             </blockquote>
             <div style="margin:10px 0">
                 <h3>Dairy and Frozen Food Manager - Winn-Dixie</h3>
@@ -112,7 +112,7 @@
                 <h3>Online Community Manager & Moderator - <a href="" target="_blank">Reddit</a></h3>
                 <p>I create, manage, and participate in many online communities related to professional and personal interests spanning marketing and technology related topics. Moderation responsibilities consists of user support, on-going promotion of community discussion, banning spammers, and the nurturing of professional communities on Reddit.</p>
                 <p>Communities combined receive over 100k views per month with over 100k subscribers/members.</p>
-                <p>Top communities based on subscribers include /r/marketing, /r/advertising, /r/webmarketing, /r/analytics, and /r/digital_marketing.</p>
+                <p>Top communities, based on subscribers, include <a href="https://www.reddit.com/r/marketing" target="_blank">/r/marketing</a>, <a href="https://www.reddit.com/r/advertising" target="_blank">/r/advertising</a>, <a href="https://www.reddit.com/r/webmarketing" target="_blank">/r/webmarketing</a>, <a href="https://www.reddit.com/r/analytics" target="_blank">/r/analytics</a>, and <a href="https://www.reddit.com/r/digital_marketing" target="_blank">/r/digital_marketing</a>.</p>
             </div>
             <div style="margin:10px 0">
                 <h3>Volunteer - <a href="https://www.friendsofjoshuahouse.org/" target="_blank">Friends of Joshua House Foundation, Inc.</a></h3>
