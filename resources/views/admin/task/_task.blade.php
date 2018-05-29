@@ -39,8 +39,8 @@
                                     <label for="requestor">Requestor</label>
                                     <input list="requestorlist" id="requestor" type="text" class="form-control" name="requestor" value="{{$task->requestor or old('requestor')}}">
                                     <datalist id="requestorlist">
-                                        @foreach ($tasks->unique('requestor') as $task)
-                                            <option value="{{$task->requestor}}">{{$task->requestor}}</option>
+                                        @foreach ($tasklists->unique('requestor') as $tasklist)
+                                            <option value="{{$tasklist->requestor}}">{{$tasklist->requestor}}</option>
                                         @endforeach
                                     </datalist>
                                 </div>
@@ -56,8 +56,8 @@
                                     <label for="tag">Tag</label>
                                     <input list="taglist" id="tag" type="text" class="form-control" name="tag" value="{{$task->tag or old('tag')}}"  required>
                                     <datalist id="taglist">
-                                        @foreach ($tasks->unique('tag') as $tag)
-                                            <option value="{{$tag->tag}}">{{$tag->tag}}</option>
+                                        @foreach ($tasklists->unique('tag') as $taglist)
+                                            <option value="{{$taglist->tag}}">{{$taglist->tag}}</option>
                                         @endforeach
                                     </datalist>
                                 </div>
