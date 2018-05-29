@@ -37,7 +37,12 @@
                                 </div>
                                 <div class="form-group {{$errors->has('Requestor') ? ' has-error' : ''}}">
                                     <label for="requestor">Requestor</label>
-                                    <input id="requestor" type="text" class="form-control" name="requestor" value="{{$task->requestor or old('requestor')}}">
+                                    <input list="requestorlist" id="requestor" type="text" class="form-control" name="requestor" value="{{$task->requestor or old('requestor')}}">
+                                    <datalist id="requestorlist">
+                                        @foreach ($tasks->unique('requestor') as $task)
+                                            <option value="{{$task->requestor}}">{{$task->requestor}}</option>
+                                        @endforeach
+                                    </datalist>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -49,7 +54,12 @@
                                 </div>
                                 <div class="form-group {{$errors->has('Tag') ? ' has-error' : ''}}">
                                     <label for="tag">Tag</label>
-                                    <input id="tag" type="text" class="form-control" name="tag" value="{{$task->tag or old('tag')}}"  required>
+                                    <input list="taglist" id="tag" type="text" class="form-control" name="tag" value="{{$task->tag or old('tag')}}"  required>
+                                    <datalist id="taglist">
+                                        @foreach ($tasks->unique('tag') as $tag)
+                                            <option value="{{$tag->tag}}">{{$tag->tag}}</option>
+                                        @endforeach
+                                    </datalist>
                                 </div>
                             </div>
                         </div>

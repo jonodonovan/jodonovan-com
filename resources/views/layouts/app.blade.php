@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
 
-    @if (App::environment('production'))
+    @if (App::environment('production') && Request::segment(1) != "home" && Request::segment(1) != "projects" )
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10717073-8"></script>
         <script>
             window.dataLayer = window.dataLayer || [];

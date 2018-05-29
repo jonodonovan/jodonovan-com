@@ -97,8 +97,9 @@ class TaskController extends Controller
     public function edit($project, $task)
     {
         $task = Task::where('slug', '=', $task)->firstOrFail();
+        $tasks = Task::get();
         $project = Project::where('slug', '=', $project)->firstOrFail();
-        return view('admin.task.edit')->withProject($project)->withTask($task);
+        return view('admin.task.edit')->withProject($project)->withTask($task)->withTasks($tasks);
     }
 
     /**
