@@ -12,7 +12,7 @@
     </div>
     <div class="row" style="margin-bottom:20px">
         <div class="col-md-12">
-            <h3>A collection of my web development projects.</h3>
+            <h3>A collection of my web projects that I desgined and developed.</h3>
         </div>
     </div>
     <div class="row">

@@ -14,19 +14,19 @@
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <div>
-                        <p>Jon O’Donovan is a professional marketer, graphic designer, and web developer. He has experience with the following:</p>
+                        <p>Jon O’Donovan is a professional marketer with over ten years experience with digital advertising, email marketing, <a href="https://www.behance.net/jonodonovan" target="_blank">graphic design</a>, <a href="/development" target="_self">web development</a>, SEO, social media, and analytics.</p>
                             <ul>
                                 <li>print and digital advertising <i>(sem/ppc/display/social)</i> campaign execution and management <i>(Google Adwords certified)</i></li>
                                 <li>social media management</li>
-                                <li>10+ years of web analytics and click tracking <i>(Google Analytics & Tag Manager certified)</i></li>
-                                <li>10+ years of email marketing including list management, design and development. <i>(Mailchimp & Salesforce)</i></li>
+                                <li>web analytics and click tracking <i>(Google Analytics & Tag Manager certified)</i></li>
+                                <li>email marketing including list management, design and development. <i>(Mailchimp & Salesforce)</i></li>
                                 <li>search optimization <i>(SEO)</i> and local listing management (Google & Bing My Business)</li>
                                 <li>graphic design</li>
                                 <li>customer service and reputation management</li>
                                 <li>web design and development</li>
                             </ul>
                         <p>Jon has a degree in electronics and eight years of experience in IT as a systems and network administrator.</p>
-                        <p>Additionally, Jon runs his own markeitng consulting company <a href="https://verticalorbit.com/" target="_blank">Verctical Orbit</a>. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
+                        <p>Additionally, Jon runs his own marketing consulting company <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
                         <p>He also has over ten years experience as a web developer working with HTML, CSS, and Laravel PHP framework.</p>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
             </blockquote>
             <div style="margin:10px 0">
                 <h3>Owner - <a href="https://verticalorbit.com" target="_blank">Vertical Orbit</a></h3>
-                <p style="font-style: italic;">Aug 2017 – Present</p>
+                <p style="font-style: italic;">Aug 2007 – Present</p>
                 <p>Marketing agency focused on:</p>
                 <ul>
                     <li>Social Media Advertising</li>
@@ -109,8 +109,8 @@
         <div class="col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Volunteer Experience</h2>
             <div style="margin:10px 0">
-                <h3>Online Community Manager & Moderator - <a href="" target="_blank">Reddit</a></h3>
-                <p>I create, manage, and participate in many online communities related to professional and personal interests spanning marketing and technology related topics. Moderation responsibilities consists of user support, on-going promotion of community discussion, banning spammers, and the nurturing of professional communities on Reddit.</p>
+                <h3><a href="/development" target="_self">Online Community Manager & Moderator</a> - <a href="https://www.reddit.com/user/jonodonovan" target="_blank">Reddit</a></h3>
+                <p>I create, manage, and participate in many online communities related to professional and personal interests spanning marketing and technology related topics. Moderation responsibilities consists of user support, on-going promotion of community discussion, and banning spammers.</p>
                 <p>Communities combined receive over 100k views per month with over 100k subscribers/members.</p>
                 <p>Top communities, based on subscribers, include <a href="https://www.reddit.com/r/marketing" target="_blank">/r/marketing</a>, <a href="https://www.reddit.com/r/advertising" target="_blank">/r/advertising</a>, <a href="https://www.reddit.com/r/webmarketing" target="_blank">/r/webmarketing</a>, <a href="https://www.reddit.com/r/analytics" target="_blank">/r/analytics</a>, and <a href="https://www.reddit.com/r/digital_marketing" target="_blank">/r/digital_marketing</a>.</p>
             </div>

@@ -11,7 +11,7 @@
         <div class="col-md-8">
             <div class="lead">
                 <img class="user">
-                <h1 style="font-size: 3em;">I'm <a href="{{url('about')}}">Jon ODonovan</a>, a <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Professional Marketer</a> and <a href="{{url('development')}}">Web Developer</a>.</h1>
+                <h1 style="font-size: 3em;">Hi! I'm <a href="{{url('about')}}">Jon ODonovan</a>, a Marketer, Designer, and Web Developer.</h1>
             </div>
         </div>
         <br>
@@ -69,6 +69,7 @@
                 <a href="{{url('weblog')}}" target="_self"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-pencil"></i> Weblog</buton></a>
                 <a href="{{url('community')}}" target="_self"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-users"></i> Community</buton></a>
                 <a href="https://linkedin.com/in/jodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-linkedin"></i> LinkedIn</buton></a>
+                <a href="https://www.behance.net/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-behance"></i> Behance</buton></a>
                 <a href="https://github.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-github"></i> Github</buton></a>
                 <a href="https://twitter.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-twitter"></i> Twitter</buton></a>
                 <a href="https://www.youtube.com/user/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-youtube"></i> YouTube</buton></a>
