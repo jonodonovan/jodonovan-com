@@ -14,20 +14,19 @@
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <div>
-                        <p>Jon O’Donovan is a professional marketer with over ten years experience with digital advertising, email marketing, <a href="https://www.behance.net/jonodonovan" target="_blank">graphic design</a>, <a href="/development" target="_self">web development</a>, SEO, social media, and analytics.</p>
+                        <p>Jon O’Donovan is a professional marketer with over ten years experience with multiple aspects of digital marketing, specifically:</p>
                             <ul>
                                 <li>print and digital advertising <i>(sem/ppc/display/social)</i> campaign execution and management <i>(Google Adwords certified)</i></li>
                                 <li>social media management</li>
                                 <li>web analytics and click tracking <i>(Google Analytics & Tag Manager certified)</i></li>
                                 <li>email marketing including list management, design and development. <i>(Mailchimp & Salesforce)</i></li>
                                 <li>search optimization <i>(SEO)</i> and local listing management (Google & Bing My Business)</li>
-                                <li>graphic design</li>
+                                <li><a href="https://www.behance.net/jonodonovan" target="_blank">graphic design</a></li>
                                 <li>customer service and reputation management</li>
-                                <li>web design and development</li>
+                                <li><a href="/development" target="_self">web design and development</a></li>
                             </ul>
-                        <p>Jon has a degree in electronics and eight years of experience in IT as a systems and network administrator.</p>
-                        <p>Additionally, Jon runs his own marketing consulting company <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
-                        <p>He also has over ten years experience as a web developer working with HTML, CSS, and Laravel PHP framework.</p>
+                        <p>Jon has a degree in electronics and eight years of experience in IT as a system and network administrator.</p>
+                        <p>Additionally, Jon runs his own digital marketing consulting company <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
                     </div>
                 </div>
             </div>
