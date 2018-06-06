@@ -5,6 +5,8 @@
 @section('meta')
 <meta property="og:title" content="{{$post->name}}"/>
 <meta property="og:image" content="https://placeimg.com/1200/627/nature"/>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:description" content="{{$post->intro}}"/>
 <meta property="og:url" content="https://jodonovan.com/weblog/{{$post->slug}}" />
 @endsection
