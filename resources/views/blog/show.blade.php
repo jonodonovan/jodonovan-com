@@ -2,6 +2,13 @@
 
 @section('title')Jonathan ODonovan | weblog @endsection
 
+@section('meta')
+<meta property="og:title" content="{{$post->name}}"/>
+<meta property="og:image" content="https://placeimg.com/1200/627/nature"/>
+<meta property="og:description" content="{{$post->intro}}"/>
+<meta property="og:url" content="https://jodonovan.com/weblog/{{$post->slug}}" />
+@endsection
+
 @section('content')
 <div class="container" style="margin-top:50px;">
     <div class="row">

@@ -34,12 +34,7 @@
     <meta name="msapplication-TileImage" content="/images/theme/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:image" content="https://jodonovan.com/images/JonODonovan-2.png">
-    <meta property="og:title" content="Jon ODonovan">
-    <meta property="og:description" content="Professional Marketer, Developer, and a Community Cultivator.">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="320">
-    <meta property="og:image:height" content="320">
+    @yield('meta')
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
