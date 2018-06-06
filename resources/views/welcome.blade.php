@@ -12,6 +12,7 @@
             <div class="lead">
                 <img class="user">
                 <h1 style="font-size: 3em;">Hi! I'm <a href="{{url('about')}}">Jon ODonovan</a>, a Marketer, Designer, and Web Developer.</h1>
+                <p class="sublinks"><a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
         <br>
@@ -75,7 +76,6 @@
                 <a href="https://www.youtube.com/user/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-youtube"></i> YouTube</buton></a>
                 {{-- <a href="https://plus.google.com/u/0/+JonathanODonovan" target="_blank"><buton class="btn btn-default btn-sm  style="margin:3px;"btn-twitter"><i class="fa fa-google-plus"></i> Google+</buton></a> --}}
                 <a href="https://reddit.com/user/JonODonovan/" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-reddit"></i> Reddit</buton></a>
-                <a href="mailto:&#69;&#77;&#65;&#73;&#76;&#64;&#74;&#79;&#68;&#79;&#78;&#79;&#86;&#65;&#78;&#46;&#67;&#79;&#77" target="_blank"><buton class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</buton></a>
                 <a href="https://verticalorbit.com" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><img src="/images/logo_v.png" name="verticalorbit" width="15px" border="0" class="hidden-xs"> Vertical Orbit</buton></a>
             </div>
         </div>
