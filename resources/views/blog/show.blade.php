@@ -14,10 +14,15 @@
 @endsection
 
 @section('content')
-<div class="container" style="margin-top:50px;">
+<div class="container" style="margin-top:70px;margin-bottom:50px;">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <a href="{{url('weblog')}}" class="label" style="color:black;"><- back</a></span>
+            <p><a href="{{url('weblog')}}" class="label" style="color:black;"><- back</a></span><em>| Posted: {{Carbon\Carbon::parse($post->publish_date)->format('m/d/Y')}} | Updated: {{Carbon\Carbon::parse($post->updated_at)->format('m/d/Y')}} | Tagged: {{$post->tag}}</em></p>
+            <h1 style="font-size:42px;">{{$post->name}}</h1>
+            <h2 style="margin-bottom:50px;">{{$post->intro}}</h2>
+            <div style="font-size:22px;font-weight: 100;">
+                <p>{!!Markdown::convertToHtml($post->description)!!}</p>
+            </div>
         </div>
     </div>
     {{-- <div class="row" style="margin-top:20px;">
@@ -36,15 +41,5 @@
             </div>
         </div>
     </div> --}}
-    <div class="row" style="margin-top:20px;">
-        <div class="col-md-10 col-md-offset-1">
-            <p><em>Posted: {{Carbon\Carbon::parse($post->publish_date)->format('m/d/Y')}} | Updated: {{Carbon\Carbon::parse($post->updated_at)->format('m/d/Y')}} | Tagged: {{$post->tag}}</em></p>
-            <h1 style="font-size:42px;">{{$post->name}}</h1>
-            <h2 style="margin-bottom:50px;">{{$post->intro}}</h2>
-            <div style="font-size:22px;font-weight: 100;">
-                <p>{!!Markdown::convertToHtml($post->description)!!}</p>
-            </div>
-        </div>
-    </div>
 </div>
 @endsection
