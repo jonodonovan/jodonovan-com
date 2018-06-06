@@ -3,6 +3,8 @@
 @section('title')Jonathan ODonovan | weblog @endsection
 
 @section('meta')
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@jonodonovan" />
 <meta property="og:title" content="{{$post->name}}"/>
 <meta property="og:image" content="https://placeimg.com/1200/627/nature"/>
 <meta property="og:image:width" content="1200">
