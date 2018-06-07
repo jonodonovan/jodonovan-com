@@ -137,9 +137,10 @@ class ProjectController extends Controller
      * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(Project $project)
+    public function edit($project)
     {
-        //
+        $project = Project::where('slug', '=', $project)->firstOrFail();
+        return view('admin.project.edit')->withProject($project);
     }
 
     /**
@@ -149,9 +150,28 @@ class ProjectController extends Controller
      * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Project $project)
+    public function update(Request $request, $project)
     {
-        //
+        $this->validate($request, array(
+            'name' => 'required|max:255'
+        ));
+
+        $project = Project::where('slug', '=', $project)->firstOrFail();
+
+        $project->name = $request->name;
+        $project->slug = $request->name;
+        $delimiter = '-';
+        $project->slug = iconv('UTF-8', 'ASCII//TRANSLIT', $project->slug);
+        $project->slug = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $project->slug);
+        $project->slug = preg_replace("/[\/_|+ -]+/", $delimiter, $project->slug);
+        $project->slug = strtolower(trim($project->slug, $delimiter));
+        $project->slug = $project->slug.'-'.str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
+
+        $project->save();
+
+        Session::flash('status', 'Project Updated');
+
+        return redirect()->route('projects.index');
     }
 
     /**

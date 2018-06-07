@@ -15,7 +15,7 @@ class ContactController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['store']]);
+        $this->middleware('auth', ['except' => ['store', 'email']]);
     }
 
     /**
@@ -60,6 +60,29 @@ class ContactController extends Controller
         Session::flash('status', 'Thank you, I will be contacting you within 24 hours.');
 
         return redirect('/');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function email(Request $request)
+    {
+        $contact = request()->validate([
+            'email' => 'required|email',
+        ]);
+
+        $contact = new Contact;
+        $contact->name = "email";
+        $contact->email = $request->email;
+        $contact->message = $request->post_slug;
+        $contact->save();
+
+        Session::flash('status', 'Thank you. Added to the list!');
+
+        return back()->withInput();
     }
 
     /**

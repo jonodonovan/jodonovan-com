@@ -15,11 +15,18 @@
 
 @section('content')
 <div class="container" style="margin-top:70px;margin-bottom:50px;">
+    <div class="row" style="padding:10px;">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            @include('partials.alerts')
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <p><a href="{{url('weblog')}}" class="label" style="color:black;"><- back</a></span><em>| Posted: {{Carbon\Carbon::parse($post->publish_date)->format('m/d/Y')}} | Updated: {{Carbon\Carbon::parse($post->updated_at)->format('m/d/Y')}} | Tagged: {{$post->tag}}</em></p>
+            <p style="background-color:#2196F3;padding:20px;color:white;">
+                <a href="{{url('weblog')}}" class="label"><- back</a></span> Posted: {{Carbon\Carbon::parse($post->publish_date)->format('m/d/Y')}} | Updated: {{Carbon\Carbon::parse($post->updated_at)->format('m/d/Y')}} | Tagged: {{$post->tag}}
+            </p>
             <h1 style="font-size:42px;">{{$post->name}}</h1>
-            <h2 style="margin-bottom:50px;">{{$post->intro}}</h2>
+            <p style="font-size: 24px;font-style: italic;margin-bottom:50px;">{{$post->intro}}</p>
             <div style="font-size:22px;font-weight: 100;">
                 <p>{!!Markdown::convertToHtml($post->description)!!}</p>
             </div>
@@ -41,5 +48,7 @@
             </div>
         </div>
     </div> --}}
+    @include('partials.email')
 </div>
+
 @endsection

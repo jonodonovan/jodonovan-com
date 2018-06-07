@@ -7,6 +7,7 @@ Route::view('about', 'pages.about');
 Route::view('thank-you', 'pages.thankyou');
 
 Route::post('contact/submit', 'ContactController@store')->name('contact.submit');
+Route::post('email/submit', 'ContactController@email')->name('email.submit');
 
 Route::get('weblog', 'BlogController@publicindex')->name('weblog.index');
 Route::get('weblog/{slug}', 'BlogController@publicshow')->name('weblog.show');
