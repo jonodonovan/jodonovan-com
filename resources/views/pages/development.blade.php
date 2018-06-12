@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title')Jonathan ODonovan | web development @endsection
+@section('title')Development | Jon ODonovan @endsection
 @section('body_style') @endsection
 
 @section('content')

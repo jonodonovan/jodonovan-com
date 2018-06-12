@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title')Jonathan ODonovan | weblog @endsection
+@section('title')Weblog | Jon ODonovan @endsection
 
 @section('content')
 <div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;">

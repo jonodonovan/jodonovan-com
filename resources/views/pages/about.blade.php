@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title')Jonathan ODonovan | about @endsection
+@section('title')About | Jon ODonovan @endsection
 @section('body_style') @endsection
 
 @section('content')
-<div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;font-weight: 100;font-size:1.2em;">
+<div class="container page-about" style="margin-top:50px;padding-top:20px;padding-bottom:20px;font-weight: 100;font-size:1.2em;">
     <div class="row" style="margin-bottom:20px;">
         <div class="col-xs-12 col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-user" aria-hidden="true"></i> About</h2>
