@@ -18,7 +18,7 @@
         <br>
         <div class="col-md-4">
             <div class="jumbotron" style="background-color:#2196F3;padding:20px;box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);">
-                <h3 style="color:white;font-size:3em;text-align:center;margin:10px 0px;">Let's get in touch</h3>
+                <h3 style="color:white;font-size:38px;text-align:center;margin:10px 0px;">Let's get in touch!</h3>
                 <form method="POST" action="{{route('contact.submit')}}">
                 {{csrf_field()}}
                     <div class="form-group">
