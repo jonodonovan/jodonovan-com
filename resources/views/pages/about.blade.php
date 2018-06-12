@@ -41,7 +41,7 @@
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Professional Experience</h2>
             <div style="margin:10px 0">
                 <h3>Marketing Coordinator - Nortrax <small style="font-style: italic;">A John Deere company</small></h3>
-                <p style="font-style: italic;">Jun 2012 – Present</p>
+                <p style="font-style: italic;">2012 – Present</p>
                 <ul>
                     <li>Planning, budgeting, and executing online advertising campaigns to improve lead generation and brand awareness utilizing Google Adwords and social media platforms.</li>
                     <li>Manages, plans, and creates content across multiple social media platforms.</li>
@@ -57,22 +57,23 @@
             <blockquote cite="https://www.linkedin.com/in/jodonovan">
                 <i>"I worked with Jon during my time at Nortrax where he helped me develop marketing material for recruiting efforts. He is helpful and knowledgeable on many areas of marketing but his knowledge of social media strategies and how to use them to benefit the business was by far the most I learned from him during my time at Nortrax. Jon is a team player and he would fit in well anywhere regardless of the work environment. He can work independently or in a group dynamic - you would not go wrong having him on your team." - <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Claudia</i></a>
             </blockquote>
+            <hr width="50%">
             <div style="margin:10px 0">
-                <h3>Owner - <a href="https://verticalorbit.com" target="_blank">Vertical Orbit</a></h3>
+                <h3>Owner - Vertical Orbit</h3>
                 <p style="font-style: italic;">Aug 2007 – Present</p>
                 <p>Marketing agency focused on:</p>
                 <ul>
-                    <li>Social Media Advertising</li>
-                    <li>Search Advertising (SEM)</li>
-                    <li>Website Analytics & Click Tracking</li>
+                    <li>Digital Advertising (SEM) & Social Media Advertising</li>
                     <li>Website & Web App Development</li>
+                    <li>Website Analytics & SEO</li>
                     <li>Email Marketing</li>
                     <li>Graphic Design</li>
                 </ul>
             </div>
+            <hr width="50%">
             <div style="margin:10px 0">
                 <h3>Information Technology Manager & Webmaster - Pilot Bank</h3>
-                <p style="font-style: italic;">2006 – Jan 2012</p>
+                <p style="font-style: italic;">2006 – 2012</p>
                 <ul>
                     <li>Data & telecom Networking and systems management</li>
                     <li>Application management and support</li>
@@ -84,15 +85,17 @@
             <blockquote cite="https://www.linkedin.com/in/jodonovan">
                 <i>"Jonathan is one of those great IT people, responsive and knowledgeable. If he doesn't have a solution to the problem he researches and finds the solution. For Jonathan it's not just about IT, he will volunteer to led a hand wherever needed. I would recommend Jon, a great employee." <br> - <a href="https://www.linkedin.com/in/jodonovan" target="_blank">Laura</a></i>
             </blockquote>
+            <hr width="50%">
             <div style="margin:10px 0">
                 <h3>Dairy and Frozen Food Manager - Winn-Dixie</h3>
-                <p style="font-style: italic;">2002 – Jan 2006</p>
+                <p style="font-style: italic;">2002 – 2006</p>
                 <ul>
                     <li>Department management and training</li>
                     <li>Customer service</li>
                     <li>Inventory and ordering management</li>
                 </ul>
             </div>
+            <hr width="50%">
             <div style="margin:10px 0">
                 <h3>Party Coordinator & Game Tech - Malibu Grand Prix</h3>
                 <p style="font-style: italic;">2000 – 2002</p>
