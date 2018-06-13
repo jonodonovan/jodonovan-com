@@ -111,7 +111,7 @@
         <div class="col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Volunteer Experience</h2>
             <div style="margin:10px 0">
-                <h3><a href="/development" target="_self">Online Community Manager & Moderator</a> - <a href="https://www.reddit.com/user/jonodonovan" target="_blank">Reddit</a></h3>
+                <h3><a href="/community" target="_self">Online Community Manager & Moderator</a> - Reddit</h3>
                 <p>I create, manage, and participate in many online communities related to professional and personal interests spanning marketing and technology related topics. Moderation responsibilities consists of user support, on-going promotion of community discussion, and banning spammers.</p>
                 <p>Communities combined receive over 100k views per month with over 100k subscribers/members.</p>
                 <p>Top communities, based on subscribers, include <a href="https://www.reddit.com/r/marketing" target="_blank">/r/marketing</a>, <a href="https://www.reddit.com/r/advertising" target="_blank">/r/advertising</a>, <a href="https://www.reddit.com/r/webmarketing" target="_blank">/r/webmarketing</a>, <a href="https://www.reddit.com/r/analytics" target="_blank">/r/analytics</a>, and <a href="https://www.reddit.com/r/digital_marketing" target="_blank">/r/digital_marketing</a>.</p>
