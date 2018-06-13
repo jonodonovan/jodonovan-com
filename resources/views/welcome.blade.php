@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+@section('meta')
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@jonodonovan" />
+<meta property="og:title" content="Jon ODonovan Portfolio & Blog"/>
+<meta property="og:image" content="https://placeimg.com/1200/627/nature"/>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:description" content="Hi! I'm Jon ODonovan, a Marketer, Designer, and Web Developer."/>
+<meta property="og:url" content="https://jodonovan.com" />
+@endsection
+
 @section('content')
 <div class="container" style="margin-top:50px;">
     <div class="row" style="padding:10px;">
