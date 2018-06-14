@@ -112,7 +112,51 @@
                 </div>
             </div>
             <div class="thumbnail" style="box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);">
-                <img src="images/assetbox_01.png" alt="Asset Box">
+                {{-- <img src="images/assetbox_01.png" alt="Asset Box"> --}}
+                <div id="assetbox-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#assetbox-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#assetbox-carousel" data-slide-to="1"></li>
+                        <li data-target="#assetbox-carousel" data-slide-to="2"></li>
+                        <li data-target="#assetbox-carousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/assetbox_01.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/assetbox_03.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/assetbox_04.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/assetbox_05.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/assetbox_06.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/assetbox_07.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/assetbox_08.png" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#assetbox-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#assetbox-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
                 <div class="caption">
                     <h3>Asset Box | IT Inventory SAAS</h3>
                     <p>A custom built SAAS web application for computer, software, and mobile device inventory management.</p>
@@ -122,7 +166,42 @@
                 </div>
             </div>
             <div class="thumbnail" style="box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);">
-                <img src="images/thelolfansite_01.png" alt="The LOL Fan Site">
+                {{-- <img src="images/thelolfansite_01.png" alt="The LOL Fan Site"> --}}
+                <div id="lolfansite-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#lolfansite-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#lolfansite-carousel" data-slide-to="1"></li>
+                        <li data-target="#lolfansite-carousel" data-slide-to="2"></li>
+                        <li data-target="#lolfansite-carousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/thelolfansite_01.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/thelolfansite_02.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/thelolfansite_03.png" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/thelolfansite_04.png" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#lolfansite-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#lolfansite-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
                 <div class="caption">
                     <h3>League of Legends Fan Site</h3>
                     <p>The LoL fan site, at the time, the only fan site dedicated to the creative types that love the game.</p>
