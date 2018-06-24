@@ -53,7 +53,9 @@
                                 <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
                                 <td>{{Carbon\Carbon::parse($task->created_at)->format('Ymd')}}</td>
                                 <td>{{Carbon\Carbon::parse($task->updated_at)->format('Ymd')}}</td>
-                                <td>{{Carbon\Carbon::parse($task->publish_date)->format('Ymd')}}</td>
+                                <td>@isset($task->publish_date)
+                                    {{Carbon\Carbon::parse($task->publish_date)->format('Ymd')}}
+                                @endisset</td>
                                 <td>
                                     <a href="{{route('projects.tasks.edit', [$project->slug, $task->slug])}}">Edit</a>
                                 </td>
