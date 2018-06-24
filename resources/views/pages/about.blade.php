@@ -16,6 +16,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="/images/jon_and_cat.jpg" name="aboutme" width="100%" border="0" class="hidden-xs img-thumbnail">
+                    <a href='https://academy.hubspot.com/courses/inbound' title='Inbound (New)' target="_blank">
+                        <img src='https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-badges/24-910315-1529850977288.png' class="hidden-xs img-thumbnail"/>
+                    </a>
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <div>
