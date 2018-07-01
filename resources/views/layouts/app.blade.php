@@ -39,7 +39,9 @@
     @yield('meta')
 
     <title>@yield('title', 'Jon ODonovan')</title>
-
+    @if (Request::is('projects/*')||('projects'))
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @endif
     @yield('style')
 
     @yield('script_header')
