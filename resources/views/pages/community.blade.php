@@ -139,7 +139,9 @@
         </div>
     </div>
     <div class="row">
-        <i>Last updated 20180523</i>
+        <div class="col-md-12">
+            <i>Last updated 20180523</i>
+        </div>
     </div>
 </div>
 @endsection

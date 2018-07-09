@@ -54,8 +54,8 @@
                         @foreach ($contacts as $contact)
                             <tr>
                                 <th>{{$count++}}</th>
-                                <th>{{$contact->created_at->format('Ymd G')}}</th>
-                                <td><a href="#">{{$contact->name}}</a></td>
+                                <th>{{$contact->created_at->format('Y-m-d')}}</th>
+                                <td>{{$contact->name}}</td>
                                 <td>{{$contact->companyname}}</td>
                                 <td>{{$contact->email}}</td>
                                 <td>{{$contact->phonenumber}}</td>
