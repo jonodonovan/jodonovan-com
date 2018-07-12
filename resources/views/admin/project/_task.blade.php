@@ -52,17 +52,19 @@
                         @foreach ($project->tasks as $task)
 
                             <tr>
-                                @if ($task->tag->use_duedate)
-                                    <td
-                                        @if (Carbon\Carbon::parse($task->due_date)->isToday())
-                                            style="background-color: #DCEDC8;"
-                                        @elseif (Carbon\Carbon::parse($task->due_date)->isPast())
-                                            style="color:white;background-color: #E57373;"
-                                        @endif
-                                    >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
-                                @else
-                                    <td></td>
-                                @endif
+                                @isset($task->tag)
+                                    @if ($task->tag->use_duedate)
+                                        <td
+                                            @if (Carbon\Carbon::parse($task->due_date)->isToday())
+                                                style="background-color: #DCEDC8;"
+                                            @elseif (Carbon\Carbon::parse($task->due_date)->isPast())
+                                                style="color:white;background-color: #E57373;"
+                                            @endif
+                                        >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
+                                    @else
+                                        <td></td>
+                                    @endif
+                                @endisset
                                 <td>{{$task->priority}}</td>
                                 <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
                                 <td>
