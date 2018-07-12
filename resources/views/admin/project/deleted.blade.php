@@ -19,9 +19,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="panel-body">
-
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -45,10 +43,16 @@
                                 >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
                                 <td>{{$task->priority}}</td>
                                 <td>{{$task->name}}</td>
-                                <td>{{$task->tag->name}}</td>
+
+                                @isset($task->tag)
+                                    <td>{{$task->tag->name}}</td>
+                                @else
+                                    <td>{{$task->old_tag}}</td>
+                                @endisset
+
                                 <td>{{Carbon\Carbon::parse($task->updated_at)->format('Ymd')}}</td>
                             </tr>
-
+                            @include('admin.task._modal_viewTask')
                         @endforeach
 
                         </tbody>
