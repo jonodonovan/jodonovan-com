@@ -51,9 +51,11 @@
                                     <label for="tag" class="control-label">Tag</label>
                                     <select name="tag" id="tag" class="form-control">
                                         <option value="">Select Type</option>
-                                        @foreach ($tags as $tag)
-                                            <option value="{{$tag->id}}" {{old('tag', $task->tag_id) == $tag->id ? 'selected' : ''}}>{{$tag->name}}</option>
-                                        @endforeach
+                                        @isset($tags)
+                                            @foreach ($tags as $tag)
+                                                <option value="{{$tag->id}}" {{old('tag', $task->tag_id) == $tag->id ? 'selected' : ''}}>{{$tag->name}}</option>
+                                            @endforeach
+                                        @endisset
                                     </select>
                                 </div>
                             </div>
@@ -78,21 +80,23 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                            @if ($task->tag->use_duedate)
-                                <div class="form-group">
-                                    <label for="due_date">Due Date</label>
-                                    <input id="due_date" type="text" class="form-control" name="due_date" value="{{$task->due_date or old('due_date')}}">
-                                </div>
+                                @isset($task->tag)
+                                    @if ($task->tag->use_duedate)
+                                        <div class="form-group">
+                                            <label for="due_date">Due Date</label>
+                                            <input id="due_date" type="text" class="form-control" name="due_date" value="{{$task->due_date or old('due_date')}}">
+                                        </div>
 
-                                @if ($task->old_tag == "Reoccurring")
-                                    <div class="form-group"></div>
-                                @else
-                                    <div class="form-group">
-                                        <label for="completed_date">Completed Date</label>
-                                        <input id="completed_date" type="text" class="form-control" name="completed_date" value="{{$task->completed_date or old('completed_date')}}">
-                                    </div>
-                                @endif
-                            @endif
+                                        @if ($task->old_tag == "Reoccurring")
+                                            <div class="form-group"></div>
+                                        @else
+                                            <div class="form-group">
+                                                <label for="completed_date">Completed Date</label>
+                                                <input id="completed_date" type="text" class="form-control" name="completed_date" value="{{$task->completed_date or old('completed_date')}}">
+                                            </div>
+                                        @endif
+                                    @endif
+                                @endisset
                             </div>
                         </div>
                         <div class="row">
