@@ -64,6 +64,8 @@
                                     @else
                                         <td></td>
                                     @endif
+                                @else
+                                    <td></td>
                                 @endisset
                                 <td>{{$task->priority}}</td>
                                 <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
