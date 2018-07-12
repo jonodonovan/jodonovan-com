@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('style')
     <link rel="stylesheet" href="/css/footable.bootstrap.min.css">
@@ -34,17 +34,22 @@
                         <tbody>
 
                         @foreach ($project->tasks as $task)
+
                             <tr>
-                                <td
-                                    @if (Carbon\Carbon::parse($task->due_date)->isToday())
-                                        style="font-weight:bold;background-color: #DCEDC8;"
-                                    @elseif (Carbon\Carbon::parse($task->due_date)->isPast())
-                                        style="color:white;font-weight:bold;background-color: #E57373;"
-                                    @endif
-                                >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
+                                @if ($task->tag->use_duedate)
+                                    <td
+                                        @if (Carbon\Carbon::parse($task->due_date)->isToday())
+                                            style="background-color: #DCEDC8;"
+                                        @elseif (Carbon\Carbon::parse($task->due_date)->isPast())
+                                            style="color:white;background-color: #E57373;"
+                                        @endif
+                                    >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
+                                @else
+                                    <td></td>
+                                @endif
                                 <td>{{$task->priority}}</td>
                                 <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
-                                <td>{{$task->tag}}</td>
+                                <td>{{$task->tag->name}}</td>
                                 <td>{{Carbon\Carbon::parse($task->updated_at)->format('Ymd')}}</td>
                                 <td>
                                     <a href="{{route('projects.tasks.edit', [$project->slug, $task->slug])}}">Edit</a>

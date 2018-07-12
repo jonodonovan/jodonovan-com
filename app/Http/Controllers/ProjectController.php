@@ -90,21 +90,12 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-
         $this->validate($request, array(
             'name' => 'required|max:255',
         ));
 
         $project = new Project;
-
-        $project->slug = $request->name;
-        $delimiter = '-';
-        $project->slug = iconv('UTF-8', 'ASCII//TRANSLIT', $project->slug);
-        $project->slug = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $project->slug);
-        $project->slug = preg_replace("/[\/_|+ -]+/", $delimiter, $project->slug);
-        $project->slug = strtolower(trim($project->slug, $delimiter));
-        $project->slug = $project->slug.'-'.str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
-
+        $project->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
         $project->name = $request->name;
         $project->user_id = Auth::user()->id;
         $project->project_type = $request->channel;
@@ -127,7 +118,7 @@ class ProjectController extends Controller
     {
         $project = Project::where('slug', '=', $slug)->firstOrFail();
         $tags = Tag::orderBy('name')->where('project_id', '=', $project->id)->get();
-        $tasks = Task::where('project_id', '=', $project->id)->get();
+        $tasks = Task::where('project_id', '=', $project->id)->with('tag')->get();
         return view('admin.project.show')->withProject($project)->withTags($tags)->withTasks($tasks);
     }
 
@@ -159,13 +150,6 @@ class ProjectController extends Controller
         $project = Project::where('slug', '=', $project)->firstOrFail();
 
         $project->name = $request->name;
-        $project->slug = $request->name;
-        $delimiter = '-';
-        $project->slug = iconv('UTF-8', 'ASCII//TRANSLIT', $project->slug);
-        $project->slug = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $project->slug);
-        $project->slug = preg_replace("/[\/_|+ -]+/", $delimiter, $project->slug);
-        $project->slug = strtolower(trim($project->slug, $delimiter));
-        $project->slug = $project->slug.'-'.str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
 
         $project->save();
 

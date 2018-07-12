@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('style')
     <link rel="stylesheet" href="/css/footable.bootstrap.min.css">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Task;
+use App\Project;
 use Illuminate\Http\Request;
 use Session;
 use Auth;
@@ -16,19 +17,27 @@ class BlogController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['publicindex', 'publicshow']]);
+        $this->middleware('auth', ['except' => ['publicindex', 'publicshow', 'publicampshow']]);
     }
 
     public function publicindex()
     {
-        $posts = Task::where('project_id', '=', '3')->where('publish_date', '<', \Carbon\Carbon::now())->orderBy('publish_date', 'DSC')->get();
+        $project = Project::where('project_type', '=', 2)->firstOrFail();
+        $posts = Task::where('project_id', '=', $project->id)->where('publish_date', '<', \Carbon\Carbon::now())->orderBy('publish_date', 'DSC')->get();
         return view('blog.index')->withPosts($posts);
     }
 
     public function publicshow($slug)
     {
-        $post = Task::where('project_id', '=', '3')->where('slug', '=', $slug)->firstOrFail();
+        $project = Project::where('project_type', '=', 2)->firstOrFail();
+        $post = Task::where('project_id', '=', $project->id)->where('slug', '=', $slug)->firstOrFail();
         return view('blog.show')->withPost($post);
+    }
+
+    public function publicampshow($slug)
+    {
+        $post = Task::where('project_id', '=', '3')->where('slug', '=', $slug)->firstOrFail();
+        return view('blog.amp')->withPost($post);
     }
 
     /**
@@ -49,7 +58,7 @@ class BlogController extends Controller
         $task->user_id = Auth::user()->id;
         $task->project_id = $request->project_id;
         $task->name = $request->name;
-        $task->tag = $request->tag;
+        $task->tag_id = $request->tag;
 
         $task->slug = $request->name;
         $delimiter = '-';
@@ -86,7 +95,7 @@ class BlogController extends Controller
         ));
 
         $task->name = $request->name;
-        $task->tag = $request->tag;
+        $task->tag_id = $request->tag;
         $task->intro = $request->intro;
         $task->description = $request->description;
         if($request->publish_date != NULL)

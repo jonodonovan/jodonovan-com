@@ -18,6 +18,7 @@
                             <span style="text-transform:uppercase;font-size:24px;">{{$task->name}}</span>
                         </div>
                         <div class="col-md-4">
+                            <span class="pull-right"><i>{{$task->old_tag}}</i></span>
                             @include('partials.alerts')
                         </div>
                     </div>
@@ -53,9 +54,14 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group {{$errors->has('Tag') ? ' has-error' : ''}}">
-                                    <label for="tag">Tag</label>
-                                    <input id="tag" type="text" class="form-control" name="tag" value="{{$task->tag or old('tag')}}"  required>
+                                <div class="form-group {{$errors->has('tag') ? ' has-error' : ''}}">
+                                    <label for="tag" class="control-label">Tag</label>
+                                    <select name="tag" id="tag" class="form-control">
+                                        <option value="">Select Type</option>
+                                        @foreach ($tags as $tag)
+                                            <option value="{{$tag->id}}" {{old('tag', $task->tag_id) == $tag->id ? 'selected' : ''}}>{{$tag->name}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                         </div>

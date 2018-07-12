@@ -20,6 +20,8 @@ class CreateTagsTable extends Migration
             $table->integer('project_id')->unsigned()->default(0);
             $table->foreign('project_id')->references('id')->on('projects');
             $table->string('name');
+            $table->string('slug');
+            $table->boolean('use_duedate')->default(true);
             $table->timestamps();
         });
     }

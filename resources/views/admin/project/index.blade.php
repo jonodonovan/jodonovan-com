@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('body_style') margin-top:20px;background-color:#212121; @endsection
 

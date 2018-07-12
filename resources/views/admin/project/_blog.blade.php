@@ -19,7 +19,7 @@
                             <div class="col-md-2">
                                 <select class="form-control" id="tag" name="tag">
                                     @foreach ($tags as $tag)
-                                        <option value="{{$tag->name}}">{{$tag->name}}</option>
+                                        <option value="{{$tag->id}}">{{$tag->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -49,7 +49,7 @@
 
                         @foreach ($project->tasks as $task)
                             <tr>
-                                <td>{{$task->tag}}</td>
+                                <td>{{$task->tag->name}}</td>
                                 <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
                                 <td>{{Carbon\Carbon::parse($task->created_at)->format('Ymd')}}</td>
                                 <td>{{Carbon\Carbon::parse($task->updated_at)->format('Ymd')}}</td>
@@ -61,26 +61,7 @@
                                 </td>
                             </tr>
 
-                            <!-- Task Modal -->
-                            <div class="modal fade" id="{{$task->id}}" tabindex="-1" role="dialog" aria-labelledby="taskModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="taskModalLabel">
-                                                <span style="text-transform:uppercase;font-weight:bold;">{{$task->name}}</span><br>
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            {!!Markdown::convertToHtml($task->description)!!}
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="{{route('projects.tasks.edit', [$project->slug, $task->slug])}}">Edit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Task Modal -->
+                            @include('admin.task._modal_viewTask')
                         @endforeach
 
                         </tbody>
@@ -88,45 +69,16 @@
                     <div class="row">
                         <div class="col-md-6">
                             <a href="#" data-toggle="modal" data-target="#tagModel" class="btn btn-default">Add Tag</a>
+                            <a href="#" data-toggle="modal" data-target="#allTagsModel" class="btn btn-default">All Tags</a>
                             <a href="{{url('projects/'.$project->slug.'/deleted')}}" class="btn btn-default">Deleted</a>
                         </div>
                         <div id="filter-form-container" class="col-md-6"></div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Tag Modal -->
-<div class="modal fade" id="tagModel" tabindex="-1" role="dialog" aria-labelledby="tagModelLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="tagModelLabel">Create New Tag</h4>
-            </div>
-            <div class="modal-body">
-                <form method="POST" action="{{route('projects.tags.store', $project->slug)}}">
-                {{csrf_field()}}
-                <input type="hidden" name="project_id" id="project_id" value="{{$project->id}}">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="tagname" class="control-label">Tag Name</label>
-                                <input id="tagname" type="text" class="form-control" name="name" value="{{old('name')}}" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary">Create Tag</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Tag Modal -->
+@include('admin.tag._modal_createTag')
+@include('admin.tag._modal_allTags')

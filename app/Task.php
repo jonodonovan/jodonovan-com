@@ -19,4 +19,9 @@ class Task extends Model
         $user = Auth::user()->id;
         return $this->belongsTo('App\Project')->where('user_id', '=', $user);
     }
+
+    public function tag()
+    {
+        return $this->belongsTo('App\Tag');
+    }
 }

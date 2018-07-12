@@ -2,16 +2,6 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
 
-    @if (App::environment('production') && Request::segment(1) != "home" && Request::segment(1) != "projects" )
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10717073-8"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-10717073-8');
-        </script>
-    @endif
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,40 +21,26 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/theme/favicon-16x16.png">
     <link rel="manifest" href="/images/theme/manifest.json">
 
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/theme/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    @yield('meta')
+    <title>@yield('title', 'Admin')</title>
 
-    <title>@yield('title', 'Jon ODonovan')</title>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     @yield('style')
-
     @yield('script_header')
 
 </head>
 <body style="@yield('body_style')">
-    @if (!Request::is('/'))
-        @include('partials/navbar')
-    @endif
-
     @yield('content')
 
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-
     @yield('script_footer')
-
     @if (session('status'))
         <script type="text/javascript">
             $(".alert-success").alert();
             window.setTimeout(function() { $(".alert-success").alert('close'); }, 5000);
         </script>
     @endif
-
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </body>
 </html>

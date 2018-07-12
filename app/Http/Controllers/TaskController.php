@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Task;
 use App\Project;
+use App\Tag;
 use Illuminate\Http\Request;
 use Auth;
 use Session;
@@ -58,16 +59,8 @@ class TaskController extends Controller
         $task->user_id = Auth::user()->id;
         $task->project_id = $request->project_id;
         $task->name = $request->name;
-        $task->tag = $request->tag;
-
-        $task->slug = $request->name;
-        $delimiter = '-';
-        $task->slug = iconv('UTF-8', 'ASCII//TRANSLIT', $task->slug);
-        $task->slug = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $task->slug);
-        $task->slug = preg_replace("/[\/_|+ -]+/", $delimiter, $task->slug);
-        $task->slug = strtolower(trim($task->slug, $delimiter));
-        $task->slug = $task->slug.'-'.str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
-
+        $task->tag_id = $request->tag;
+        $task->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
         $task->due_date = date('Y-m-d', strtotime("+3 days"));
 
         $task->save();
@@ -97,9 +90,10 @@ class TaskController extends Controller
     public function edit($project, $task)
     {
         $task = Task::where('slug', '=', $task)->firstOrFail();
-        $tasklists = Task::orderBy('requestor', 'asc')->get();
+        $tasklists = Task::where('id', '=', $task->id)->orderBy('requestor', 'asc')->get();
         $project = Project::where('slug', '=', $project)->firstOrFail();
-        return view('admin.task.edit')->withProject($project)->withTask($task)->withTasklists($tasklists);
+        $tags = Tag::where('project_id', '=', $project->id)->get();
+        return view('admin.task.edit')->withProject($project)->withTask($task)->withTasklists($tasklists)->withTags($tags);
     }
 
     /**
@@ -115,7 +109,6 @@ class TaskController extends Controller
         // dd($request);
         $this->validate($request, array(
             'name' => 'required|max:255',
-            'slug' => 'required|max:255',
             'requestor' => 'max:255',
             'tag' => 'required',
             'description' => '',
@@ -126,7 +119,7 @@ class TaskController extends Controller
         ));
 
         $task->name = $request->name;
-        $task->tag = $request->tag;
+        $task->tag_id = $request->tag;
         $task->requestor = $request->requestor;
         $task->description = $request->description;
         $task->priority = $request->priority;
@@ -137,23 +130,10 @@ class TaskController extends Controller
             $task->due_date = $request->due_date;
         }
         $task->completed_date = $request->completed_date;
-        // if($request->completed_date != NULL)
-        // {
-        //     dd($request->completed_date);
-        //     // $task->completed_date = $request->completed_date;
-        // }
-
-        $task->slug = $request->name;
-        $delimiter = '-';
-        $task->slug = iconv('UTF-8', 'ASCII//TRANSLIT', $task->slug);
-        $task->slug = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $task->slug);
-        $task->slug = preg_replace("/[\/_|+ -]+/", $delimiter, $task->slug);
-        $task->slug = strtolower(trim($task->slug, $delimiter));
-        $task->slug = $task->slug.'-'.str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
 
         $task->save();
 
-        Session::flash('status', 'New Task Updated');
+        Session::flash('status', 'Task Updated');
 
         return redirect()->route('projects.show', $project);
     }

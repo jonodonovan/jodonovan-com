@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('style')
     <link rel="stylesheet" href="/css/footable.bootstrap.min.css">
@@ -45,7 +45,7 @@
                                 >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
                                 <td>{{$task->priority}}</td>
                                 <td>{{$task->name}}</td>
-                                <td>{{$task->tag}}</td>
+                                <td>{{$task->tag->name}}</td>
                                 <td>{{Carbon\Carbon::parse($task->updated_at)->format('Ymd')}}</td>
                             </tr>
 

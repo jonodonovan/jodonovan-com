@@ -50,6 +50,7 @@ class TagController extends Controller
     {
         $this->validate($request, array(
             'name' => 'required|max:255',
+            'use_duedate' => ''
         ));
 
         $tag = new Tag;
@@ -57,6 +58,8 @@ class TagController extends Controller
         $tag->user_id = Auth::user()->id;
         $tag->project_id = $request->project_id;
         $tag->name = $request->name;
+        $tag->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
+        $tag->use_duedate = $request->use_duedate;
 
         $tag->save();
 
@@ -82,9 +85,10 @@ class TagController extends Controller
      * @param  \App\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tag $tag)
+    public function edit($project, $tag)
     {
-        //
+        $tag = Tag::where('slug', '=', $tag)->firstOrFail();
+        return view('admin.tag.edit')->withTag($tag)->withProject($project);
     }
 
     /**
@@ -94,9 +98,20 @@ class TagController extends Controller
      * @param  \App\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tag $tag)
+    public function update(Request $request, $project, $tag)
     {
-        //
+        $tag = Tag::where('slug', '=', $tag)->firstOrFail();
+
+        $this->validate($request, array(
+            'name' => 'required|max:255'
+        ));
+
+        $tag->name = $request->name;
+        $tag->save();
+
+        Session::flash('status', 'Tag Updated');
+
+        return redirect()->route('projects.show', $project);
     }
 
     /**

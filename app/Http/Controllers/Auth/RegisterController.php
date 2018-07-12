@@ -36,7 +36,11 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        if (\App::environment('production')) {
+            $this->middleware('auth');
+        } else {
+            $this->middleware('guest');
+        }
     }
 
     /**
