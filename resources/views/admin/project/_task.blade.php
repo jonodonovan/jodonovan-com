@@ -18,9 +18,11 @@
                         <input type="hidden" name="project_id" id="project_id" value="{{$project->id}}">
                             <div class="col-md-2">
                                 <select class="form-control" id="tag" name="tag">
-                                    @foreach ($tags as $tag)
-                                        <option value="{{$tag->id}}">{{$tag->name}}</option>
-                                    @endforeach
+                                    @isset($tags)
+                                        @foreach ($tags as $tag)
+                                            <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                        @endforeach
+                                    @endisset
                                 </select>
                             </div>
                             <div class="col-md-8">
@@ -63,7 +65,11 @@
                                 @endif
                                 <td>{{$task->priority}}</td>
                                 <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
-                                <td>{{$task->tag->name}}</td>
+                                <td>
+                                    @isset($task->tag)
+                                        {{$task->tag->name}}
+                                    @endisset
+                                </td>
                                 <td>{{Carbon\Carbon::parse($task->updated_at)->format('Ymd')}}</td>
                                 <td>
                                     <a href="{{route('projects.tasks.edit', [$project->slug, $task->slug])}}">Edit</a>

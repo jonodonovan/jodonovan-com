@@ -29,9 +29,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::orderBy('name')->get();
-        $tags = Tag::orderBy('name')->get();
-        $tasks = Task::get();
-        return view('admin.project.index')->withProjects($projects)->withTags($tags)->withTasks($tasks);
+        return view('admin.project.index')->withProjects($projects);
     }
 
     /**

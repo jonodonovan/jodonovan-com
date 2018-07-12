@@ -14,12 +14,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($tags as $tag)
-                            <tr>
-                                <td>{{$tag->name}}</td>
-                                <td><a href="{{route('projects.tags.edit', [$project->slug, $tag->slug])}}">Edit</a></td>
-                            </tr>
-                        @endforeach
+                        @isset($tags)
+                            @foreach ($tags as $tag)
+                                <tr>
+                                    <td>{{$tag->name}}</td>
+                                    <td><a href="{{route('projects.tags.edit', [$project->slug, $tag->slug])}}">Edit</a></td>
+                                </tr>
+                            @endforeach
+                        @endisset
                     </tbody>
                 </table>
             </div>
