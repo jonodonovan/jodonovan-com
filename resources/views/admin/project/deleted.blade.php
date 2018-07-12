@@ -42,7 +42,7 @@
                                     @endif
                                 >{{Carbon\Carbon::parse($task->due_date)->format('Ymd')}}</td>
                                 <td>{{$task->priority}}</td>
-                                <td>{{$task->name}}</td>
+                                <td><a href="#" data-toggle="modal" data-target="#{{$task->id}}">{{$task->name}}</a></td>
 
                                 @isset($task->tag)
                                     <td>{{$task->tag->name}}</td>
