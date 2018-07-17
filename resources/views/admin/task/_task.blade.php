@@ -6,7 +6,6 @@
 @section('script_header')
     <script src="/vendor/flatpickr.js"></script>
 @endsection
-
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -40,8 +39,9 @@
                                     <label for="requestor">Requestor</label>
                                     <input list="requestorlist" id="requestor" type="text" class="form-control" name="requestor" value="{{$task->requestor or old('requestor')}}">
                                     <datalist id="requestorlist">
-                                        @foreach ($tasklists->unique('requestor') as $tasklist)
-                                            <option value="{{$tasklist->requestor}}">{{$tasklist->requestor}}</option>
+
+                                        @foreach ($tasks->unique('requestor') as $requestor)
+                                            <option value="{{$requestor->requestor}}">{{$requestor->requestor}}</option>
                                         @endforeach
                                     </datalist>
                                 </div>
