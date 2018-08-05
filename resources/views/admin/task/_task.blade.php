@@ -87,7 +87,7 @@
                                             <input id="due_date" type="text" class="form-control" name="due_date" value="{{$task->due_date or old('due_date')}}">
                                         </div>
 
-                                        @if ($task->old_tag == "Reoccurring")
+                                        @if ($task->tag->name == "Reoccurring")
                                             <div class="form-group"></div>
                                         @else
                                             <div class="form-group">
