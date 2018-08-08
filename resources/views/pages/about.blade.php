@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <div>
-                        <p>Jon O’Donovan is a professional marketer with over ten years experience with multiple aspects of digital marketing, specifically:</p>
+                        <p>Jon O’Donovan is a professional marketer and web developer with over ten years experience with multiple aspects of traditional and digital marketing, specifically:</p>
                             <ul>
                                 <li>print and digital advertising campaign execution and management</li>
                                 <li>social media management</li>
