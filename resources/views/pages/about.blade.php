@@ -24,17 +24,17 @@
                     <div>
                         <p>Jon O’Donovan is a professional marketer with over ten years experience with multiple aspects of digital marketing, specifically:</p>
                             <ul>
-                                <li>print and digital advertising <i>(sem/ppc/display/social)</i> campaign execution and management <i>(Google Adwords certified)</i></li>
+                                <li>print and digital advertising campaign execution and management</li>
                                 <li>social media management</li>
-                                <li>web analytics and click tracking <i>(Google Analytics & Tag Manager certified)</i></li>
+                                <li>web <i>(Google)</i> analytics and click tracking <i>(Tag Manager)</i></li>
                                 <li>email marketing including list management, design and development. <i>(Mailchimp & Salesforce)</i></li>
-                                <li>search optimization <i>(SEO)</i> and local listing management (Google & Bing My Business)</li>
+                                <li>search optimization and local listing management</li>
                                 <li><a href="https://www.behance.net/jonodonovan" target="_blank">graphic design</a></li>
-                                <li>customer service and reputation management</li>
                                 <li><a href="/development" target="_self">web design and development</a></li>
+                                <li>customer service and reputation management</li>
                             </ul>
-                        <p>Jon has a degree in electronics and eight years of experience in IT as a system and network administrator.</p>
-                        <p>Additionally, Jon runs his own digital marketing consulting company <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit will focus on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
+                        <p>Jon has a degree in electronic engineering and eight years of experience in Information Technology as a systems and network administrator.</p>
+                        <p>Additionally, Jon runs his own digital marketing agency, <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit focuses on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
                     </div>
                 </div>
             </div>
@@ -48,8 +48,8 @@
         <div class="col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Professional Experience</h2>
             <div style="margin:10px 0">
-                <h3>Marketing Coordinator - Nortrax <small style="font-style: italic;">A John Deere company</small></h3>
-                <p style="font-style: italic;">2012 – Present</p>
+                <h3><b>Marketing Coordinator</b> - Nortrax <small style="font-size:85%;font-style: italic;">a John Deere company</small></h3>
+                <p style="font-size:85%;font-style: italic;">2012 – Present</p>
                 <ul>
                     <li>Planning, budgeting, and executing online advertising campaigns to improve lead generation and brand awareness utilizing Google Adwords and social media platforms.</li>
                     <li>Manages, plans, and creates content across multiple social media platforms.</li>
@@ -67,9 +67,9 @@
             </blockquote>
             <hr width="50%">
             <div style="margin:10px 0">
-                <h3>Owner - Vertical Orbit</h3>
-                <p style="font-style: italic;">Aug 2007 – Present</p>
-                <p>Marketing agency focused on:</p>
+                <h3><b>Owner</b> - Vertical Orbit</h3>
+                <p style="font-size:85%;font-style: italic;">Aug 2007 – Present</p>
+                <p>Digital marketing agency focused on:</p>
                 <ul>
                     <li>Digital Advertising (SEM) & Social Media Advertising</li>
                     <li>Website & Web App Development</li>
@@ -80,8 +80,8 @@
             </div>
             <hr width="50%">
             <div style="margin:10px 0">
-                <h3>Information Technology Manager & Webmaster - Pilot Bank</h3>
-                <p style="font-style: italic;">2006 – 2012</p>
+                <h3><b>Information Technology Manager & Webmaster</b> - Pilot Bank</h3>
+                <p style="font-size:85%;font-style: italic;">2006 – 2012</p>
                 <ul>
                     <li>Data & telecom Networking and systems management</li>
                     <li>Application management and support</li>
@@ -95,8 +95,8 @@
             </blockquote>
             <hr width="50%">
             <div style="margin:10px 0">
-                <h3>Dairy and Frozen Food Manager - Winn-Dixie</h3>
-                <p style="font-style: italic;">2002 – 2006</p>
+                <h3><b>Dairy and Frozen Food Manager</b> - Winn-Dixie</h3>
+                <p style="font-size:85%;font-style: italic;">2002 – 2006</p>
                 <ul>
                     <li>Department management and training</li>
                     <li>Customer service</li>
@@ -105,8 +105,8 @@
             </div>
             <hr width="50%">
             <div style="margin:10px 0">
-                <h3>Party Coordinator & Game Tech - Malibu Grand Prix</h3>
-                <p style="font-style: italic;">2000 – 2002</p>
+                <h3><b>Party Coordinator & Game Tech</b> - Malibu Grand Prix</h3>
+                <p style="font-size:85%;font-style: italic;">2000 – 2002</p>
                 <ul>
                     <li>Event scheduling and inventory ordering</li>
                     <li>Customer service</li>

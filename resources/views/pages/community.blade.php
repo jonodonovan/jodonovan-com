@@ -18,7 +18,7 @@
     <div class="row" style="margin-bottom:20px">
         <div class="col-md-12">
             <h3>The professional communities I'm helping to build with 1,000+ subscribers.</h3>
-            <p>I create, manage, and participate in many online communities related to professional and personal interests spanning marketing and technology related topics. Moderation responsibilities consists of user support, on-going promotion of community discussion, and banning spammers.</p>
+            <p>As a online community manager, I provide user support, on-going promotion of community discussion, and the banning of spammers for multiple online communities related to marketing and technology. <a href="https://discordapp.com/invite/7D68BxT" target="_blank">Like to chat in real-time? Join our Marketing Discord server</a> or join one of our Reddit communities below:</p>
         </div>
     </div>
     <div class="row">
@@ -31,7 +31,7 @@
                     For marketing professionals to discuss and ask questions related to the marketing industry.
                 </div>
                 <div class="panel-footer">
-                    114,182 subscribers
+                    126,239 subscribers
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                     For marketing professionals working with social media.
                 </div>
                 <div class="panel-footer">
-                    58,257 subscribers
+                    64,208 subscribers
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                     Ground Zero for ad creators, students, copywriters, affiliates, and anyone else who is finely honing their reverse banner blindness for professional reasons.
                 </div>
                 <div class="panel-footer">
-                    45,517 subscribers
+                    50,116 subscribers
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     Dedicated to web analytics, data and business analytics. We're here to discuss analysis of data, learning of skills and implementation of web analytics.
                 </div>
                 <div class="panel-footer">
-                    18,513 subscribers
+                    19,735 subscribers
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
                     For digital marketing news, best practices, strategy, and learning.
                 </div>
                 <div class="panel-footer">
-                    17,333 subscribers
+                    18,697 subscribers
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                     <h3 class="panel-title"><a href="https://www.reddit.com/r/webmarketing" target="_blank">r/webmarketing <i class="fa fa-link" aria-hidden="true"></i></a></h3>
                 </div>
                 <div class="panel-footer">
-                    16,233 subscribers
+                    16,933 subscribers
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                     <h3 class="panel-title"><a href="https://www.reddit.com/r/askmarketing" target="_blank">r/AskMarketing <i class="fa fa-link" aria-hidden="true"></i></a></h3>
                 </div>
                 <div class="panel-footer">
-                    14,284 subscribers
+                    15,079 subscribers
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
                     <h3 class="panel-title"><a href="https://www.reddit.com/r/DigitalMarketing" target="_blank">r/DigitalMarketing <i class="fa fa-link" aria-hidden="true"></i></a></h3>
                 </div>
                 <div class="panel-footer">
-                    11,351 subscribers
+                    13,461 subscribers
                 </div>
             </div>
         </div>
@@ -123,7 +123,7 @@
                     <h3 class="panel-title"><a href="https://www.reddit.com/r/content_marketing" target="_blank">r/content_marketing <i class="fa fa-link" aria-hidden="true"></i></a></h3>
                 </div>
                 <div class="panel-footer">
-                    10,317 subscribers
+                    11,078 subscribers
                 </div>
             </div>
         </div>
@@ -133,14 +133,14 @@
                     <h3 class="panel-title"><a href="https://www.reddit.com/r/GoogleAnalytics" target="_blank">r/GoogleAnalytics <i class="fa fa-link" aria-hidden="true"></i></a></h3>
                 </div>
                 <div class="panel-footer">
-                    1,402 subscribers
+                    1,611 subscribers
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <i>Last updated 20180523</i>
+            <i>Last updated 20180801</i>
         </div>
     </div>
 </div>
