@@ -48,24 +48,46 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, array(
-            'name' => 'required|max:255',
-            'use_duedate' => ''
-        ));
+		if ($request->project_type == '2') {
 
-        $tag = new Tag;
+			$this->validate($request, array(
+	            'name' => 'required|max:255',
+	        ));
 
-        $tag->user_id = Auth::user()->id;
-        $tag->project_id = $request->project_id;
-        $tag->name = $request->name;
-        $tag->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
-        $tag->use_duedate = $request->use_duedate;
+	        $tag = new Tag;
 
-        $tag->save();
+	        $tag->user_id = Auth::user()->id;
+	        $tag->project_id = $request->project_id;
+	        $tag->name = $request->name;
+	        $tag->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
 
-        Session::flash('status', 'New Tag Created');
+	        $tag->save();
 
-        return back();
+	        Session::flash('status', 'New Tag Created');
+
+	        return back();
+
+		} else {
+			$this->validate($request, array(
+	            'name' => 'required|max:255',
+	            'use_duedate' => ''
+	        ));
+
+	        $tag = new Tag;
+
+	        $tag->user_id = Auth::user()->id;
+	        $tag->project_id = $request->project_id;
+	        $tag->name = $request->name;
+	        $tag->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
+	        $tag->use_duedate = $request->use_duedate;
+
+	        $tag->save();
+
+	        Session::flash('status', 'New Tag Created');
+
+	        return back();
+		}
+
     }
 
     /**

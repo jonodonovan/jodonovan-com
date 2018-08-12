@@ -4,6 +4,7 @@
             <form method="POST" action="{{route('projects.tags.store', $project->slug)}}">
             {{csrf_field()}}
             <input type="hidden" name="project_id" id="project_id" value="{{$project->id}}">
+            <input type="hidden" name="project_type" id="project_type" value="{{$project->project_type}}">
 
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

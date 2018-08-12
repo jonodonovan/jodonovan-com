@@ -22,9 +22,17 @@ class BlogController extends Controller
 
     public function publicindex()
     {
-        $project = Project::where('project_type', '=', 2)->firstOrFail();
-        $posts = Task::where('project_id', '=', $project->id)->where('publish_date', '<', \Carbon\Carbon::now())->orderBy('publish_date', 'DSC')->get();
-        return view('blog.index')->withPosts($posts);
+        try {
+
+          $project = Project::where('project_type', '=', 2)->firstOrFail();
+          $posts = Task::where('project_id', '=', $project->id)->where('publish_date', '<', \Carbon\Carbon::now())->orderBy('publish_date', 'DSC')->get();
+          return view('blog.index')->withPosts($posts);
+
+        } catch (\Exception $e) {
+
+          echo "not weblog project found";
+
+        }
     }
 
     public function publicshow($slug)
