@@ -47,9 +47,16 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Professional Experience</h2>
+			<div style="margin:10px 0">
+                <h3><b>Digital Marketing Manager</b> - The Food Group <small style="font-size:85%;font-style: italic;">marketing agency</small></h3>
+                <p style="font-size:85%;font-style: italic;">2018 – Present</p>
+                <ul>
+                    <li>More to come...</li>
+                </ul>
+            </div>
             <div style="margin:10px 0">
                 <h3><b>Marketing Coordinator</b> - Nortrax <small style="font-size:85%;font-style: italic;">a John Deere company</small></h3>
-                <p style="font-size:85%;font-style: italic;">2012 – Present</p>
+                <p style="font-size:85%;font-style: italic;">2012 – 2018</p>
                 <ul>
                     <li>Planning, budgeting, and executing online advertising campaigns to improve lead generation and brand awareness utilizing Google Adwords and social media platforms.</li>
                     <li>Manages, plans, and creates content across multiple social media platforms.</li>
