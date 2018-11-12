@@ -27,11 +27,12 @@
                                 <li>print and digital advertising campaign execution and management</li>
                                 <li>social media management</li>
                                 <li>web <i>(Google)</i> analytics and click tracking <i>(Tag Manager)</i></li>
-                                <li>email marketing including list management, design and development. <i>(Mailchimp & Salesforce)</i></li>
+                                <li>email marketing including list management, design and development</li>
                                 <li>search optimization and local listing management</li>
                                 <li><a href="https://www.behance.net/jonodonovan" target="_blank">graphic design</a></li>
                                 <li><a href="/development" target="_self">web design and development</a></li>
                                 <li>customer service and reputation management</li>
+								<li>inbound and marketing automation</li>
                             </ul>
                         <p>Jon has a degree in electronic engineering and eight years of experience in Information Technology as a systems and network administrator.</p>
                         <p>Additionally, Jon runs his own digital marketing agency, <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit focuses on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
@@ -122,7 +123,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">Volunteer Experience</h2>
             <div style="margin:10px 0">
@@ -140,6 +141,6 @@
                 <p>Volunteers help bring the “economics of life to life” for local 5th grade students. You are placed in a business with 3 to 9 students and supervise as they operate their business for the day. The students have been prepared for their one-day experience at JA BizTown through 4 weeks of in-school teacher taught curriculum.</p>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 @endsection
