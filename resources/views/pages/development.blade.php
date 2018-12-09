@@ -65,7 +65,7 @@
                 <img src="images/verticalorbit_01.png" alt="Asset Box">
                 <div class="caption">
                     <h3>Vertical Orbit | Digital Marketing Agency</h3>
-                    <p>Built with Laravel, this is the home of my digital marketing agency. Featuring custom illustrations, a custom CRM with inquiry form integration, and project task management.</p>
+                    <p>Built with Laravel. This is the home of my digital marketing and web development agency. Featuring custom graphics, custom built customer relationship manager (CRM), quoting & invoice manager, and project task management.</p>
                     {{-- <p><a href="https://www.youtube.com/watch?v=B4R1zH9-QF0" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Video introduction</a></p> --}}
                     <p></p>
                     <p><a href="https://verticalorbit.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> VerticalOrbit.com</a></p>
