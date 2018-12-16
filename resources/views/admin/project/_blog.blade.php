@@ -24,7 +24,7 @@
                                 </select>
                             </div>
                             <div class="col-md-8">
-                                <input id="name" type="text" class="form-control" name="name" value="{{old('name')}}"  required autofocus placeholder="Task Name">
+                                <input id="name" type="text" class="form-control" name="name" value="{{old('name')}}"  required autofocus placeholder="Post Title">
                             </div>
                             <div class="col-md-2">
                                 <button type="submit" class="btn btn-default">Create Post</button>
