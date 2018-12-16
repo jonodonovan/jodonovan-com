@@ -4,6 +4,7 @@ Route::view('/', 'welcome');
 Route::view('development', 'pages.development');
 Route::view('community', 'pages.community');
 Route::view('about', 'pages.about');
+Route::view('about/experience', 'pages.experience');
 Route::view('thank-you', 'pages.thankyou');
 
 Route::post('contact/submit', 'ContactController@store')->name('contact.submit');
@@ -11,6 +12,7 @@ Route::post('email/submit', 'ContactController@email')->name('email.submit');
 
 Route::get('weblog', 'BlogController@publicindex')->name('weblog.index');
 Route::get('weblog/{slug}', 'BlogController@publicshow')->name('weblog.show');
+Route::get('weblog/amp/{slug}', 'BlogController@publicampshow')->name('weblogamp.show');
 // Route::get('weblog/{slug}', 'BlogController@show')->name('weblog.show');
 
 Route::resource('projects', 'ProjectController');
