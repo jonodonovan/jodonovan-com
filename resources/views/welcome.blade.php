@@ -84,7 +84,7 @@
         <div class="col-md-10 col-md-offset-1 text-center">
             <h4>Where you can find me online:</h4>
             <div style="position: relative; z-index: 2;">
-                <a href="https://linkedin.com/in/jodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-linkedin"></i> LinkedIn</buton></a>
+                <a href="https://linkedin.com/in/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-linkedin"></i> LinkedIn</buton></a>
                 <a href="https://www.behance.net/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-behance"></i> Behance</buton></a>
                 <a href="https://github.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-github"></i> Github</buton></a>
                 <a href="https://twitter.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-twitter"></i> Twitter</buton></a>
