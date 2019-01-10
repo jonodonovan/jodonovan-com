@@ -24,7 +24,7 @@
                     <div>
                         <p>Jon O’Donovan is a professional marketer and web developer with over ten years experience with multiple aspects of traditional and digital marketing, specifically:</p>
                             <ul>
-                                <li>print and digital advertising campaign execution and management</li>
+                                <li>print and digital (PPC and display) advertising execution and management</li>
                                 <li>social media management</li>
                                 <li>web <i>(Google)</i> analytics and click tracking <i>(Tag Manager)</i></li>
                                 <li>email marketing including list management, design and development</li>

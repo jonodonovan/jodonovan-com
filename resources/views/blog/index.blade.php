@@ -20,7 +20,7 @@
 	                            <a href="{{url('weblog/'.$post->slug)}}">
 	                            <div class="thumbnail">
 	                                <div class="caption">
-										<span style="float:right;"><em class="small">Posted {{Carbon\Carbon::parse($post->publish_date)->format('m/d/y')}}</em></span>
+										<span style="float:right;"><em class="small">{{Carbon\Carbon::parse($post->publish_date)->format('m/d/y')}}</em></span>
 	                                    <h3 class="post-name">{{$post->name}}</h3>
 	                                    <p class="post-intro">{{ str_limit(strip_tags($post->intro), 100) }}</p>
 										<p><span class="post-btn btn btn-primary" role="button">Read More</span></p>
