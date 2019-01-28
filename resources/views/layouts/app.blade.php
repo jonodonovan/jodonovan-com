@@ -34,6 +34,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/images/theme/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta name="google" value="notranslate">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @yield('meta')
