@@ -37,7 +37,8 @@
                     <p class="intro">{{$post->intro}}</p>
                 </header>
                 <section class="body">
-                    <p>{!!Markdown::convertToHtml($post->description)!!}</p>
+                    {{-- <p>{!!Markdown::convertToHtml($post->description)!!}</p>  --}}
+                    <p>{!! $post->description !!}</p>
                 </section>
             </article>
         </div>

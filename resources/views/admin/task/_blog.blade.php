@@ -1,5 +1,7 @@
 @section('style')
-    <link rel="stylesheet" href="/vendor/simplemde.min.css">
+    {{-- <link rel="stylesheet" href="/vendor/simplemde.min.css"> --}}
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/vendor/flatpickr.min.css">
 @endsection
 
@@ -26,7 +28,7 @@
                 <div class="panel-body">
                     <form method="POST" action="{{route('projects.blogs.update', [$project->slug, $task->slug])}}">
                     {{method_field('PATCH')}}
-                    {{csrf_field()}}
+                    {{ csrf_field() }}
                     <input type="hidden" name="project_id" id="project_id" value="{{$project->slug}}">
                         <div class="row">
                             <div class="col-md-12">
@@ -77,7 +79,7 @@
                             <div class="col-md-12">
                                 <div class="form-group {{$errors->has('description') ? ' has-error' : ''}}">
                                     <label for="description">Body</label>
-                                    <textarea rows="10" id="description" class="form-control" name="description">{{$task->description or old('description')}}</textarea>
+                                    <textarea rows="10" id="description" class="editable medium-editor-textarea" name="description">{{$task->description or old('description')}}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +112,7 @@
             <div class="modal-footer">
                 <form method="POST" action="{{route('projects.tasks.destroy', [$project->slug, $task->slug])}}">
                 {{method_field('DELETE')}}
-                {{csrf_field()}}
+                {{ csrf_field() }}
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </div>
@@ -127,7 +129,25 @@
         });
     </script>
 
-    <script src="/vendor/simplemde.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+    <script>
+        // var editor = new MediumEditor('.editable');
+
+        var editor = new MediumEditor('.editable', {
+            toolbar: {
+                buttons: ['bold', 'italic', 'underline', 'anchor']
+            },
+            anchor: {
+                customClassOption: 'button',
+                customClassOptionText: 'Button',
+                linkValidation: false,
+                placeholderText: 'Paste or type a link',
+                targetCheckbox: true,
+                targetCheckboxText: 'Open in new window'
+            }
+        });
+    </script>
+    {{-- <script src="/vendor/simplemde.min.js"></script>
     <script>
         var simplemde = new SimpleMDE({
             indentWithTabs: false,
@@ -138,5 +158,5 @@
                 title: "Code",
             }],
         });
-    </script>
+    </script> --}}
 @endsection

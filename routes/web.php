@@ -1,12 +1,15 @@
 <?php
 
 Route::view('/', 'welcome');
-Route::view('development', 'pages.development');
 Route::view('community', 'pages.community');
 Route::view('about', 'pages.about');
-Route::view('about/experience', 'pages.experience');
+Route::view('about/professional-experience', 'pages.experience');
 Route::view('thank-you', 'pages.thankyou');
 Route::view('domains', 'pages.domains');
+
+// Development Pages
+Route::view('development', 'development.index');
+Route::view('development/fun-with-bots', 'development.fun-with-bots');
 
 Route::post('contact/submit', 'ContactController@store')->name('contact.submit');
 Route::post('email/submit', 'ContactController@email')->name('email.submit');

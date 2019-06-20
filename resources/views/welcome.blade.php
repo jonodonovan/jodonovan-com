@@ -88,8 +88,7 @@
                 <a href="https://www.behance.net/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-behance"></i> Behance</buton></a>
                 <a href="https://github.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-github"></i> Github</buton></a>
                 <a href="https://twitter.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-twitter"></i> Twitter</buton></a>
-                {{-- <a href="https://www.youtube.com/user/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-youtube"></i> YouTube</buton></a> --}}
-                {{-- <a href="https://plus.google.com/u/0/+JonathanODonovan" target="_blank"><buton class="btn btn-default btn-sm  style="margin:3px;"btn-twitter"><i class="fa fa-google-plus"></i> Google+</buton></a> --}}
+                <a href="https://www.youtube.com/user/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-youtube"></i> YouTube</buton></a>
                 <a href="https://reddit.com/user/JonODonovan/" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-reddit"></i> Reddit</buton></a>
                 <a href="https://verticalorbit.com" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><img src="/images/logo_v.png" name="verticalorbit" width="15px" border="0" class="hidden-xs"> Vertical Orbit</buton></a>
             </div>
