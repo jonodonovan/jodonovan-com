@@ -37,7 +37,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Contact Submissions</div>
                 <div class="panel-body">
-                    <table class="table table-hover">
+                    <table class="table table-hover admin-table">
                         <thead>
                             <tr>
                                 <th style="width:5%">#</th>
