@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('meta')
+<link rel="canonical" href="https://jodonovan.com" />
+<link rel="alternate" href="https://jodonovan.com" hreflang="en-us" />
+<meta name="description" content="A Marketing Strategist, Web Developer, and Community Builder.">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@jonodonovan" />
 <meta property="og:title" content="Jon ODonovan Portfolio & Blog"/>
-<meta property="og:image" content="https://placeimg.com/1200/627/nature"/>
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="627">
-<meta property="og:description" content="Hi! I'm Jon ODonovan, a Marketer, Designer, and Web Developer."/>
+<meta property="og:description" content="A Marketing Strategist, Web Developer, and Community Builder."/>
 <meta property="og:url" content="https://jodonovan.com" />
 @endsection
 
@@ -25,10 +25,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 hidden-xs hidden-sm">
             <div class="lead">
                 <img class="user">
-                <h1 style="font-size: 3em;">Hi! I'm <a href="{{url('about')}}">Jon ODonovan</a>, a Marketer, Designer, and Web Developer.</h1>
+                <h1 style="font-size: 3em;">Hello! I'm <a href="{{url('about')}}">Jon ODonovan</a>.</h1> 
+                <h2>I'm a marketing strategist, web developer, and community builder.</h2>
+                <p class="sublinks"><a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
+            </div>
+        </div>
+        <div class="col-md-8 hidden-md hidden-lg">
+            <div class="lead text-center">
+                <img class="user" style="margin:0 auto;">
+                <h1 style="font-size: 3em;">Hello! I'm <a href="{{url('about')}}">Jon ODonovan</a>.</h1>
+                <h2>I'm a marketing strategist, web developer, and community builder.</h2>
                 <p class="sublinks"><a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
@@ -77,20 +86,6 @@
                     @captcha
                     <button type="submit" class="btn btn-main btn-lg" style="background-color:white;">Send</button>
                 </form>
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-bottom:50px;">
-        <div class="col-md-10 col-md-offset-1 text-center">
-            <h4>Where you can find me online:</h4>
-            <div style="position: relative; z-index: 2;">
-                <a href="https://linkedin.com/in/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-linkedin"></i> LinkedIn</buton></a>
-                <a href="https://www.behance.net/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-behance"></i> Behance</buton></a>
-                <a href="https://github.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-github"></i> Github</buton></a>
-                <a href="https://twitter.com/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-twitter"></i> Twitter</buton></a>
-                <a href="https://www.youtube.com/user/jonodonovan" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-youtube"></i> YouTube</buton></a>
-                <a href="https://reddit.com/user/JonODonovan/" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><i class="fa fa-reddit"></i> Reddit</buton></a>
-                <a href="https://verticalorbit.com" target="_blank"><buton class="btn btn-default btn-sm" style="margin:3px;"><img src="/images/logo_v.png" name="verticalorbit" width="15px" border="0" class="hidden-xs"> Vertical Orbit</buton></a>
             </div>
         </div>
     </div>

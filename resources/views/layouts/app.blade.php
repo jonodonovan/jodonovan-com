@@ -15,7 +15,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@yield('title', 'Jon ODonovan')</title>
 
+    @yield('meta')
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/theme/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google" value="notranslate">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="apple-touch-icon" sizes="57x57" href="/images/theme/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/theme/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/theme/apple-icon-72x72.png">
@@ -31,16 +38,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/theme/favicon-16x16.png">
     <link rel="manifest" href="/images/theme/manifest.json">
 
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/theme/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="google" value="notranslate">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    @yield('meta')
-
-    <title>@yield('title', 'Jon ODonovan')</title>
-
     @yield('style')
 
     @yield('script_header')
@@ -52,6 +49,9 @@
     @endif
 
     @yield('content')
+    @include('partials.footer')
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
@@ -64,8 +64,6 @@
             window.setTimeout(function() { $(".alert-success").alert('close'); }, 5000);
         </script>
     @endif
-
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </body>
 </html>

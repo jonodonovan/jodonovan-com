@@ -3,6 +3,9 @@
 @section('title'){{$post->name}} | Jon ODonovan @endsection
 
 @section('meta')
+<link rel="canonical" href="https://jodonovan.com/weblog/{{$post->slug}}" />
+<link rel="alternate" href="https://jodonovan.com/weblog/{{$post->slug}}" hreflang="en-us" />
+<meta name="description" content="{{$post->intro}}">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@jonodonovan" />
 <meta property="og:title" content="{{$post->name}}"/>
