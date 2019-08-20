@@ -129,7 +129,7 @@
                     <div class="caption">
                         <h3>Looking For Marketing | Marketing News, Resources, Jobs, Events, and Books</h3>
                         <p>Built with Laravel. Originally, a marketing focused job board, turned community resource hub. This a hub is the collection of personally built and community sourced resources. Meant to help marketers at different stages in their career without needing to sign up for another email list.</p>
-                        <p><a href="https://verticalorbit.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> VerticalOrbit.com</a></p>
+                        <p><a href="https://lookingformarketing.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> lookingformarketing.com</a></p>
                     </div>
                 </div>
             </div>
