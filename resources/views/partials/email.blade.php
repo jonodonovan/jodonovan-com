@@ -11,7 +11,7 @@
                         <input type="text" class="form-control" name="email" id="email" placeholder="Email" value="{{old('email')}}" required>
                     </div>
                     <div class="col-xs-2" style="padding:0px 2px;">
-                        <button type="submit" class="btn btn-main btn-md" style="background-color:white;">Add</button>
+                        <button type="submit" class="btn btn-main btn-md" style="background-color:white;">Add me!</button>
                     </div>
                 </div>
             </form>

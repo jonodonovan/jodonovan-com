@@ -21,6 +21,11 @@
 
 @section('content')
 <div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;">
+	<div class="row">
+        <div class="col-md-12">
+            <h1 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Weblog</h1>
+        </div>
+    </div>
     <div class="row" style="margin-bottom:20px;">
         <div class="col-md-10 col-md-offset-1">
 			@if (! $posts->isEmpty())

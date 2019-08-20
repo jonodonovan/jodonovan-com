@@ -29,11 +29,9 @@
             @include('partials.alerts')
         </div>
     </div>
-    <main class="row">
+    <main class="row" style="margin-bottom:50px;">
         <div class="col-md-10 col-md-offset-1">
-            <nav>
-                <a href="{{url('weblog')}}" class="label"><- back</a></span> Posted: {{Carbon\Carbon::parse($post->publish_date)->format('m/d/Y')}} | Updated: {{Carbon\Carbon::parse($post->updated_at)->format('m/d/Y')}} | Tagged: {{$post->tag->name}}
-            </nav>
+            <a href="{{url('weblog')}}" class="label" style="color:#636b6f;"><- back</a></span> Posted: {{Carbon\Carbon::parse($post->publish_date)->format('m/d/Y')}} | Updated: {{Carbon\Carbon::parse($post->updated_at)->format('m/d/Y')}} | Tagged: {{$post->tag->name}}
             <article>
                 <header>
                     <h1 class="title">{{$post->name}}</h1>

@@ -101,11 +101,38 @@
 <div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;">
     <div class="row">
         <div class="col-md-12">
-            <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-terminal" aria-hidden="true"></i> Web Development</h2>
+            <h1 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-terminal" aria-hidden="true"></i> Web Development</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="browser-row">
+                    <div class="column left">
+                        <span class="dot" style="background:#ED594A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#5AC05A;"></span>
+                    </div>
+                    <div class="column middle">
+                        <input type="text" value="https://lookingformarketing.com">
+                    </div>
+                    <div class="column right">
+                        <div style="float:right">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/lookingformarketing_01.svg" class="img-responsive" alt="Looking for Marketing">
+                    <div class="caption">
+                        <h3>Looking For Marketing | Marketing News, Resources, Jobs, Events, and Books</h3>
+                        <p>Built with Laravel. Originally, a marketing focused job board, turned community resource hub. This a hub is the collection of personally built and community sourced resources. Meant to help marketers at different stages in their career without needing to sign up for another email list.</p>
+                        <p><a href="https://verticalorbit.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> VerticalOrbit.com</a></p>
+                    </div>
+                </div>
+            </div>
             <div class="thumbnail">
                 <div class="browser-row">
                     <div class="column left">
@@ -144,7 +171,7 @@
                         <span class="dot" style="background:#5AC05A;"></span>
                     </div>
                     <div class="column middle">
-                        <input type="text" value="https://iotpicker.com">
+                        <input type="text" value="https://verticalorbit.com">
                     </div>
                     <div class="column right">
                         <div style="float:right">
@@ -159,8 +186,6 @@
                     <div class="caption">
                         <h3>Vertical Orbit | Digital Marketing Agency</h3>
                         <p>Built with Laravel. This is the home of my digital marketing and web development agency. Featuring custom graphics, custom built customer relationship manager (CRM), quoting & invoice manager, and project task management.</p>
-                        {{-- <p><a href="https://www.youtube.com/watch?v=B4R1zH9-QF0" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Video introduction</a></p> --}}
-                        <p></p>
                         <p><a href="https://verticalorbit.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> VerticalOrbit.com</a></p>
                     </div>
                 </div>
@@ -257,61 +282,6 @@
                     <p>Allows for teams to manage a company's inventory for easy check-in/check-out recording and inventory reporting with custom user permissions.</p>
                     {{-- <p><a href="https://www.youtube.com/watch?v=B4R1zH9-QF0" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Video introduction</a></p> --}}
                     <p>Built with Codeigniter <i>(PHP framework)</i>, Twitter Bootstrap <i>(CSS framework)</i>, and Font Awesome <i>(CSS icons)</i>.</p>
-                </div>
-            </div>
-            <div class="thumbnail">
-                {{-- <img src="images/thelolfansite_01.png" alt="The LOL Fan Site"> --}}
-                <div id="lolfansite-carousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#lolfansite-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#lolfansite-carousel" data-slide-to="1"></li>
-                        <li data-target="#lolfansite-carousel" data-slide-to="2"></li>
-                        <li data-target="#lolfansite-carousel" data-slide-to="3"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/thelolfansite_01.png" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="images/thelolfansite_02.png" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="images/thelolfansite_03.png" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="images/thelolfansite_04.png" alt="...">
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#lolfansite-carousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#lolfansite-carousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="caption">
-                    <h3>League of Legends Fan Site</h3>
-                    <p>The LoL fan site, at the time, the only fan site dedicated to the creative types that love the game.</p>
-                    <p>The site featured social elements found on Facebook, hence the unattractive “the league of legends social networking fan site” logo (I don’t know what I was thinking during naming). Site members could share status updates, post of friends “walls”, private message, upload images, etc.</p>
-                    <p>The other features of the site lead, at the time, to the largest collection of fan written stories and art. The site had many writers submitting new and exclusive content for their fan base.</p>
-                    <p>At last count, the site contained over 1,400 stories and over 3,000 pieces of art based around the games lore, characters, and events.</p>
-                </div>
-            </div>
-            <div class="thumbnail">
-                <img src="images/PNF_01.jpg" alt="Peachs Neet Feet">
-                <div class="caption">
-                    <h3>Peachs Neet Feet</h3>
-                    <p>In 2012, I came across the <a href="https://www.youtube.com/watch?v=IB8Uvf9JqhM" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Random Acts of Kindness Foundation’s video on PNF</a>. PNF’s purpose of bringing a small bit of joy to children who otherwise were going through some tough times really captivated me. Their idea of creating custom shoes with hand-painted art for the children was so simple, yet the impact was so huge to recipients.</p>
-                    <p>I was inspired to do a random act of kindness, so I contacted PNF about their website. At the time, the website was a simple blog hosted on blogger. I pitched my idea of offering to build, host, and maintain a new site while they grew to help more children.</p>
-                    <p>I feel humbled to be part of a great organization that is still going strong to this day.</p>
-                    <p>For more information visit <a href="https://www.randomactsofkindness.org" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> randomactsofkindness.org</a></p>
                 </div>
             </div>
         </div>

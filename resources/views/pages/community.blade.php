@@ -24,13 +24,12 @@
 <div class="container" style="margin-top:50px;padding-top:20px;padding-bottom:20px;">
     <div class="row">
         <div class="col-md-12">
-            <h2 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-users" aria-hidden="true"></i> Cultivating Communities</h2>
+            <h1 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-users" aria-hidden="true"></i> Cummunity</h1>
         </div>
     </div>
     <div class="row" style="margin-bottom:20px">
-        <div class="col-md-12">
-            <h3>The communities I'm helping to build with 10,000+ subscribers.</h3>
-            <p>As a community manager I provide community support, on-going promotion of community discussion, and the management of spammers.</p>
+        <div class="col-md-12 text-center">
+            <h2>The communities I'm cultivating.</h2>
 			<p>Like to chat in real-time? <a href="https://discordapp.com/invite/qhndSC2" target="_blank">Join our Marketing Discord server</a> or join one of our Reddit communities below:</p>
         </div>
     </div>
