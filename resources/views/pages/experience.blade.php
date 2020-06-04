@@ -20,9 +20,15 @@
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+            <div style="margin:10px 0">
+                <h3><b>Digital Marketing Manager</b> - SunView Software <small style="font-size:85%;font-style: italic;">ITSM Software</small></h3>
+                <p style="font-size:85%;font-style: italic;">March 2020 – Present</p>
+
+            </div>
+			<hr width="50%">
 			<div>
                 <h3><b>Digital Marketing Manager</b> - The Food Group <small style="font-size:85%;font-style: italic;">marketing agency</small></h3>
-                <p style="font-size:85%;font-style: italic;">2018 – Present</p>
+                <p style="font-size:85%;font-style: italic;">2018 – 2020</p>
                 <p>Digital marketing lead working closely with internal teams and agency clients to scope, plan, execute, and QA all digital related projects including email, website optimization and SEO, website and landing page development, UI/UX, lead generation and nurturing, and marketing automation and CRM.</p>
 
                 <p>About The Food Group</p>
@@ -32,7 +38,7 @@
             <hr width="50%">
             <div style="margin:10px 0">
                 <h3><b>Owner</b> - Vertical Orbit</h3>
-                <p style="font-size:85%;font-style: italic;">Aug 2007 – Present</p>
+                <p style="font-size:85%;font-style: italic;">2007 – Present</p>
                 <p>Digital marketing agency focused on:</p>
                 <ul>
                     <li>Digital Advertising (SEM) & Social Media Advertising</li>

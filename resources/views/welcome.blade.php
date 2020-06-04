@@ -29,7 +29,7 @@
             <div class="lead">
                 <img class="user">
                 <h1 style="font-size: 3em;">Hello! I'm Jon ODonovan.</h1>
-                <h2>I'm a marketer, web developer, and community builder.</h2>
+                <h2>I'm a marketer, web developer, <br> and community builder.</h2>
                 <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
