@@ -23,31 +23,37 @@
 @section('content')
 <div class="container page-about" style="margin-top:50px;padding-top:20px;padding-bottom:20px;font-weight: 100;font-size:1.2em;">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8 col-md-offset-2">
             <h1 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">About</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12" style="padding:20px;">
-            <p>Jon O’Donovan is a Digital Marketing and web development professional. As a IT and networking technician, Jon began self-learning how to handcraft websites. Building on his desire to create, he made a career change to focus more on advertising and digital marketing. Leveraging his past experience in IT and as a web developer, Jon is able to see the bigger picture. Understanding the holistic requirements of digital and development projects has enabled Jon to excel in the digital marketing world.</p>
-            <p>Jon is born and raised in Tampa, Fl. He is the oldest of four. Raised by a single mother before her passing before he graduated from high school. As bad as it sounds, Jon has had many strong and influential friends and family throughout his life.</p> 
-            <p>He enjoys helping others in need as he understands that not everyone gets the best start. He is active in many online communities where he helps those looking to get into the field or solve challenging problems.</p>
+        <div class="col-md-8 col-md-offset-2" style="padding:20px;">
+            <h3>Professional Experience</h3>
+            <p>Jon O’Donovan is a Digital Marketing and web development professional. As an IT technician, Jon began self-learning how to handcraft websites. Building on his desire to create, he made a career change to focus more on advertising and digital marketing.</p>
+            <p>Leveraging his past experience in IT and as a web developer, Jon is able to see the bigger picture. Understanding the holistic requirements of digital projects has enabled Jon to excel in this field.</p>
             <ul>
-                <li>Digital strategy</li>
-                <li>print and digital (SEM and display) advertising execution and management</li>
-                <li>social media management</li>
-                <li>web analytics and click tracking</li>
-                <li>email marketing, list management, design, and development</li>
-                <li>search optimization and local listing management</li>
-                <li><a href="https://www.behance.net/jonodonovan" target="_blank">graphic design</a></li>
-                <li><a href="/development" target="_self">web design and development</a></li>
-                <li>customer service and reputation management</li>
-                <li>inbound and marketing automation</li>
-                <li>community management</li>
+                <li>Digtial Marketing Strategy</li>
+                <li>Website Design & Development</li>
+                <li>Project Management</li>
+                <li>Lead Generation & Nurturing</li>
+                <li>Marketing Automation & CRM</li>
+                <li>Search Organic and Paid Optimization</li>
+                <li>Print & Digital Advertising</li>
+                <li>Social Media Management</li>
+                <li>Website Optimization, Best Practices, & Analytics</li>
+                <li>Email Marketing Management</li>
+                <li>Local Listing Management</li>
+                <li>Customer Service &  Reputation Management</li>
+                <li>Adobe InDesign, Photoshop, Illustrator, and XD</li>
+                <li>HubSpot, Salesforce, and Pardot</li>
             </ul>
-            <p><a href="about/professional-experience">Professioanl experience</a></p>
+            <p>Learn more on <a href="https://linkedin.com/in/jonodonovan" target="_blank">LinkedIn <i class="fa fa-linkedin"></i></a></p>
+
+            <h3>Yonger Years</h3>
+            <p>Jon is born and raised in Tampa, Fl. He is the oldest of four. Raised by a single mother before her passing before he graduated from high school. As bad as it sounds, Jon has had many strong and influential friends and family throughout his life.</p>
+            <p>He enjoys helping others in need as he understands that not everyone gets the best start. He is active in many online communities where he helps those looking to get into the field or solve challenging problems.</p>
             <p>Jon has a degree in electronic engineering and eight years of experience in Information Technology as a systems and network administrator.</p>
-            <p>Additionally, Jon runs his own digital marketing agency, <a href="https://verticalorbit.com/" target="_blank">Vertical Orbit</a>. Vertical Orbit focuses on providing professional assistance to companies seeking to resolve marketing and web development issues.</p>
         </div>
     </div>
 </div>
