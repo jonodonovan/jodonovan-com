@@ -30,7 +30,7 @@
                 <img class="user">
                 <h1 style="font-size: 3em;">Hello! I'm Jon ODonovan.</h1>
                 <h2>I'm a marketer, web developer, <br> and community builder.</h2>
-                <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
+                <a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
         <div class="col-md-8 hidden-md hidden-lg">
@@ -38,7 +38,7 @@
                 <img class="user" style="margin:0 auto;">
                 <h1 style="font-size: 3em;">Hello! I'm Jon ODonovan.</h1>
                 <h2>I'm a marketer, web developer, and community builder.</h2>
-                <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
+                <a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
         <br>
