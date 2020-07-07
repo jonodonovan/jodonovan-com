@@ -23,12 +23,15 @@
 @section('content')
 <div class="container page-about" style="margin-top:50px;padding-top:20px;padding-bottom:20px;font-weight: 100;font-size:1.2em;">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-offset-2 col-md-10">
             <h1 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;">About</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 col-md-offset-2" style="padding:20px;">
+        <div class="col-md-offset-2 col-md-3">
+            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="profinder" data-theme="dark" data-vanity="jonodonovan"><a class="LI-simple-link" href="https://www.linkedin.com/profinder/pro/jonodonovan?trk=provider-badge">Jon ODonovan</a></div><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        </div>
+        <div class="col-md-7" style="padding:20px;">
             <h3>Professional Experience</h3>
             <p>Jon O’Donovan is a Digital Marketing and web development professional. As an IT technician, Jon began self-learning how to handcraft websites. Building on his desire to create, he made a career change to focus more on advertising and digital marketing.</p>
             <p>Leveraging his past experience in IT and as a web developer, Jon is able to see the bigger picture. Understanding the holistic requirements of digital projects has enabled Jon to excel in this field.</p>
@@ -48,7 +51,7 @@
                 <li>Adobe InDesign, Photoshop, Illustrator, and XD</li>
                 <li>HubSpot, Salesforce, and Pardot</li>
             </ul>
-            <p>Learn more on <a href="https://linkedin.com/in/jonodonovan" target="_blank">LinkedIn <i class="fa fa-linkedin"></i></a></p>
+            <p>Learn more on <a href="https://linkedin.com/in/jonodonovan" target="_blank">LinkedIn</a></p>
 
             <h3>Yonger Years</h3>
             <p>Jon is born and raised in Tampa, Fl. He is the oldest of four. Raised by a single mother before her passing before he graduated from high school. As bad as it sounds, Jon has had many strong and influential friends and family throughout his life.</p>
