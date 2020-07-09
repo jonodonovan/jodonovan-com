@@ -21,11 +21,11 @@
         body {
           font-family: Arial
         }
-        
+
         * {
           box-sizing: border-box;
         }
-        
+
         /* Container for columns and the top "toolbar" */
         .browser-row {
           padding: 10px;
@@ -33,31 +33,31 @@
           border-top-left-radius: 4px;
           border-top-right-radius: 4px;
         }
-        
+
         /* Create three unequal columns that floats next to each other */
         .column {
           float: left;
         }
-        
+
         .left {
           width: 15%;
         }
-        
+
         .right {
           width: 10%;
         }
-        
+
         .middle {
           width: 75%;
         }
-        
+
         /* Clear floats after the columns */
         .browser-row:after {
           content: "";
           display: table;
           clear: both;
         }
-        
+
         /* Three dots */
         .dot {
           margin-top: 4px;
@@ -67,7 +67,7 @@
           border-radius: 50%;
           display: inline-block;
         }
-        
+
         /* Style the input field */
         input[type=text] {
           width: 100%;
@@ -79,7 +79,7 @@
           color: #666;
           padding: 5px;
         }
-        
+
         /* Three bars (hamburger menu) */
         .bar {
           width: 17px;
@@ -88,7 +88,7 @@
           margin: 3px 0;
           display: block;
         }
-        
+
         /* Page content */
         .content {
           padding: 10px;
@@ -125,11 +125,47 @@
                     </div>
                 </div>
                 <div class="content">
-                    <img src="images/lookingformarketing_01.svg" class="img-responsive" alt="Looking for Marketing">
+                    <img src="images/lookingformarketing_01_r2.png" class="img-responsive" alt="Looking for Marketing">
                     <div class="caption">
                         <h3>Looking For Marketing | Marketing News, Resources, Jobs, Events, and Books</h3>
                         <p>Built with Laravel. Originally, a marketing focused job board, turned community resource hub. This a hub is the collection of personally built and community sourced resources. Meant to help marketers at different stages in their career without needing to sign up for another email list.</p>
+                        <ul>
+                            <li>Free job board for those looking to hire within the industry</li>
+                            <li>Professional directory for those looking for more exposer in getting hired</li>
+                            <li>Freelancer directory for those looking for more work</li>
+                            <li>News feeds for all marketing related disciplines from industry professional blogs</li>
+                            <li>Events and webinar calendar to find what’s going on in the industry</li>
+                            <li>Resource directories for books, podcasts, tools, terminology, and guides</li>
+                            <li>Course directory grouped by marketing industry!</li>
+                        </ul>
                         <p><a href="https://lookingformarketing.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> lookingformarketing.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class="browser-row">
+                    <div class="column left">
+                        <span class="dot" style="background:#ED594A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#5AC05A;"></span>
+                    </div>
+                    <div class="column middle">
+                        <input type="text" value="https://verticalorbit.com">
+                    </div>
+                    <div class="column right">
+                        <div style="float:right">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/verticalorbit_01_r2.png" class="img-responsive" alt="Asset Box">
+                    <div class="caption">
+                        <h3>Vertical Orbit | Digital Marketing Agency</h3>
+                        <p>Built with Laravel. This is the home of my digital marketing and web development agency. Featuring custom graphics, custom built customer relationship manager (CRM), quoting & invoice manager, and project task management.</p>
+                        <p><a href="https://verticalorbit.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> VerticalOrbit.com</a></p>
                     </div>
                 </div>
             </div>
@@ -163,33 +199,6 @@
             </div>
         </div>
         <div class="col-md-12">
-            <div class="thumbnail">
-                <div class="browser-row">
-                    <div class="column left">
-                        <span class="dot" style="background:#ED594A;"></span>
-                        <span class="dot" style="background:#FDD800;"></span>
-                        <span class="dot" style="background:#5AC05A;"></span>
-                    </div>
-                    <div class="column middle">
-                        <input type="text" value="https://verticalorbit.com">
-                    </div>
-                    <div class="column right">
-                        <div style="float:right">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <img src="images/verticalorbit_01.png" class="img-responsive" alt="Asset Box">
-                    <div class="caption">
-                        <h3>Vertical Orbit | Digital Marketing Agency</h3>
-                        <p>Built with Laravel. This is the home of my digital marketing and web development agency. Featuring custom graphics, custom built customer relationship manager (CRM), quoting & invoice manager, and project task management.</p>
-                        <p><a href="https://verticalorbit.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> VerticalOrbit.com</a></p>
-                    </div>
-                </div>
-            </div>
             <div class="thumbnail">
                 <div id="projectmgr-carousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->

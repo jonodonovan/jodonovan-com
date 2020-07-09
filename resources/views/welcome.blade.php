@@ -3,11 +3,11 @@
 @section('meta')
 <link rel="canonical" href="https://jodonovan.com" />
 <link rel="alternate" href="https://jodonovan.com" hreflang="en-us" />
-<meta name="description" content="A Marketing Strategist, Web Developer, and Community Builder.">
+<meta name="description" content="Marketing Strategist, Web Developer, and Community Builder.">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@jonodonovan" />
 <meta property="og:title" content="Jon ODonovan Portfolio & Blog"/>
-<meta property="og:description" content="A Marketing Strategist, Web Developer, and Community Builder."/>
+<meta property="og:description" content="Marketing Strategist, Web Developer, and Community Builder."/>
 <meta property="og:url" content="https://jodonovan.com" />
 @endsection
 
@@ -28,16 +28,16 @@
         <div class="col-md-8 hidden-xs hidden-sm">
             <div class="lead">
                 <img class="user">
-                <h1 style="font-size: 3em;">Hello! I'm Jon ODonovan.</h1>
-                <h2>I'm a marketer, web developer, <br> and community builder.</h2>
+                <h1 style="font-size: 3em;">Hello! <br> I'm Jon ODonovan.</h1>
+                <h2>Marketing Strategist, Web Developer, <br> and Community Builder.</h2>
                 <a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
         <div class="col-md-8 hidden-md hidden-lg">
             <div class="lead text-center">
                 <img class="user" style="margin:0 auto;">
-                <h1 style="font-size: 3em;">Hello! I'm Jon ODonovan.</h1>
-                <h2>I'm a marketer, web developer, and community builder.</h2>
+                <h1 style="font-size: 3em;">Hello! <br> I'm Jon ODonovan.</h1>
+                <h2>Marketing Strategist, Web Developer, and Community Builder.</h2>
                 <a href="/about">About</a> | <a href="/development">Development</a> | <a href="/community">Community</a> | <a href="/weblog">Weblog</a></p>
             </div>
         </div>
