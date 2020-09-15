@@ -25,7 +25,16 @@
         <div class="col-md-12">
             <h1 style="color:white;background-color:#2196F3;padding:20px;text-transform:uppercase;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Weblog</h1>
         </div>
-    </div>
+	</div>
+	<div class="row">
+		<div class="col-md-offset-2 col-md-8" style="text-align:center;color:#333333;font-weight:bold;">
+			<div class="alert alert-info" role="alert">
+				<h3>Looking for the marketing worksheets? They moved...</h3>
+				<p></p>
+				<a href="https://lookingformarketing.com/documents" target="_blank" class="btn btn-primary stretched-link" style="text-transform: uppercase;">View documents</a>
+			</div>
+		</div>
+	</div>
     <div class="row" style="margin-bottom:20px;">
         <div class="col-md-10 col-md-offset-1">
 			@if (! $posts->isEmpty())
