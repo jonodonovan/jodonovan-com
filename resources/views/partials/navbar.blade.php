@@ -14,7 +14,6 @@
                 <li class="@if (Request::is('about')) active @endif"><a href="{{url('about')}}"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
                 <li class="@if (Request::is('development')) active @endif"><a href="{{url('development')}}"><i class="fa fa-terminal" aria-hidden="true"></i> Development</a></li>
                 <li class="@if (Request::is('community')) active @endif"><a href="{{url('community')}}"><i class="fa fa-users" aria-hidden="true"></i> Community</a></li>
-                <li class="@if (Request::is('weblog*')) active @endif"><a href="{{url('weblog')}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Weblog</a></li>
             </ul>
         </div>
     </div>
