@@ -52,11 +52,6 @@
                 <li>HubSpot, Salesforce, and Pardot</li>
             </ul>
             <p>Learn more on <a href="https://linkedin.com/in/jonodonovan" target="_blank">LinkedIn</a></p>
-
-            <h3>Yonger Years</h3>
-            <p>Jon is born and raised in Tampa, Fl. He is the oldest of four. Raised by a single mother before her passing before he graduated from high school. As bad as it sounds, Jon has had many strong and influential friends and family throughout his life.</p>
-            <p>He enjoys helping others in need as he understands that not everyone gets the best start. He is active in many online communities where he helps those looking to get into the field or solve challenging problems.</p>
-            <p>Jon has a degree in electronic engineering and eight years of experience in Information Technology as a systems and network administrator.</p>
         </div>
     </div>
 </div>
