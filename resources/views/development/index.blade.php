@@ -155,7 +155,7 @@
                     <img src="images/lookingformarketing_01_r3.png" class="img-responsive" alt="Looking for Marketing">
                     <div class="caption">
                         <h3>Looking For Marketing | Marketing News, Resources, Jobs, Events, and Books</h3>
-                        <p>Built with Laravel. Originally, a marketing focused job board, turned community resource hub. This a hub is the collection of personally built and community sourced resources. Meant to help marketers at different stages in their career without needing to sign up for another email list.</p>
+                        <p>Built with Laravel. Originally, a marketing focused job board, turned community resource hub.</p>
                         <ul>
                             <li>Custom built job board, professional and freelancer directories</li>
                             <li>Real-time news feeds from industry sources</li>
