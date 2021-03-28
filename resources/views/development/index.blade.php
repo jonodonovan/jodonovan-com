@@ -114,6 +114,33 @@
                         <span class="dot" style="background:#5AC05A;"></span>
                     </div>
                     <div class="column middle">
+                        <input type="text" value="https://copybybecca.com">
+                    </div>
+                    <div class="column right">
+                        <div style="float:right">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/copybybecca.png" class="img-responsive" alt="Looking for Marketing">
+                    <div class="caption">
+                        <h3>CopyByBecca | Developmental Editing and Beta Reading Services</h3>
+                        <p>Built with Laravel. Simple landing page, blog, and quote form.</p>
+                        <p><a href="https://copybybecca.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> copybybecca.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class="browser-row">
+                    <div class="column left">
+                        <span class="dot" style="background:#ED594A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#5AC05A;"></span>
+                    </div>
+                    <div class="column middle">
                         <input type="text" value="https://lookingformarketing.com">
                     </div>
                     <div class="column right">
@@ -125,18 +152,20 @@
                     </div>
                 </div>
                 <div class="content">
-                    <img src="images/lookingformarketing_01_r2.png" class="img-responsive" alt="Looking for Marketing">
+                    <img src="images/lookingformarketing_01_r3.png" class="img-responsive" alt="Looking for Marketing">
                     <div class="caption">
                         <h3>Looking For Marketing | Marketing News, Resources, Jobs, Events, and Books</h3>
                         <p>Built with Laravel. Originally, a marketing focused job board, turned community resource hub. This a hub is the collection of personally built and community sourced resources. Meant to help marketers at different stages in their career without needing to sign up for another email list.</p>
                         <ul>
-                            <li>Free job board for those looking to hire within the industry</li>
-                            <li>Professional directory for those looking for more exposer in getting hired</li>
-                            <li>Freelancer directory for those looking for more work</li>
-                            <li>News feeds for all marketing related disciplines from industry professional blogs</li>
-                            <li>Events and webinar calendar to find what’s going on in the industry</li>
-                            <li>Resource directories for books, podcasts, tools, terminology, and guides</li>
-                            <li>Course directory grouped by marketing industry!</li>
+                            <li>Custom built job board, professional and freelancer directories</li>
+                            <li>Real-time news feeds from industry sources</li>
+                            <li>Events and webinar calendar</li>
+                            <li>Resource directories for books, podcasts, courses, tools, definitions, and guides</li>
+                            <li>Engagement system to track liked resources and memeber completed courses</li>
+                            <li>Authentication with LinkedIn API</li>
+                            <li>Resource search with Algolia search API</li>
+                            <li>Webhook integrations with community Discord and Slack</li>
+                            <li>Site administration and blog functionality</li>
                         </ul>
                         <p><a href="https://lookingformarketing.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> lookingformarketing.com</a></p>
                     </div>
