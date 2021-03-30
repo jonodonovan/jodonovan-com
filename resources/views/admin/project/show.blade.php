@@ -1,5 +1,14 @@
 @extends('layouts.admin')
 
+@section('title')
+    @if ($project->project_type == '1')
+        {{ $project->name }} Project
+    @else
+        Blog Admin
+    @endif
+
+@endsection
+
 @section('style')
     <link rel="stylesheet" href="/css/footable.bootstrap.min.css">
 @endsection
