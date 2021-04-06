@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::orderBy('created_at', 'desc')->get();
+        $contacts = Contact::orderBy('created_at', 'desc')->limit(5)->get();
         return view('home', compact('contacts'));
     }
 }
