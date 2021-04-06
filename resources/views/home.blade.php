@@ -21,7 +21,7 @@
                     <a href="projects/create" class="btn btn-default">Create Project</a>
                     <a href="{{route('logout')}}"
                         onclick="event.preventDefault();
-                                 document.getElementById('logout-form').submit();" class="btn btn-default">
+                                document.getElementById('logout-form').submit();" class="btn btn-default">
                         Logout
                     </a>
 
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Contact Submissions</div>
@@ -67,6 +67,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 @endsection
