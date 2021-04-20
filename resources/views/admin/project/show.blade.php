@@ -37,8 +37,8 @@
                 },
                 "paging": {
                     "enabled": true,
-                    "size": 10,
-                    "limit": 10,
+                    "size": 15,
+                    "limit": 15,
                     "countFormat": "Showing {PF}-{PL} of {TR} results"
                 }
             });
