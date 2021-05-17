@@ -1,5 +1,6 @@
 @extends('layouts.admin')
 
+@section('title') {{ $task->name }} @endsection
 @section('body_style') margin-top:20px;background-color:#212121; @endsection
 
 @section('content')
