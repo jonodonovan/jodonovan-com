@@ -40,7 +40,9 @@ class ProjectController extends Controller
     public function all($slug)
     {
         $project = Project::where('slug', '=', $slug)->firstOrFail();
-        $tasks = Task::where('project_id', '=', $project->id)->with('tag')
+        $tasks = Task::where('project_id', '=', $project->id)
+            ->where('completed_date', NULL)
+            ->with('tag')
             ->orderBy('due_date')
             ->orderBy('priority')
             ->get();
@@ -118,7 +120,9 @@ class ProjectController extends Controller
     {
         $project = Project::where('slug', '=', $slug)->firstOrFail();
         $tags = Tag::orderBy('name')->where('project_id', '=', $project->id)->get();
-        $tasks = Task::where('project_id', '=', $project->id)->with('tag')
+        $tasks = Task::where('project_id', '=', $project->id)
+            ->where('completed_date', NULL)
+            ->with('tag')
             ->orderBy('due_date')
             ->orderBy('priority')
             ->get();
