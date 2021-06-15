@@ -39,17 +39,17 @@
                     <table class="table table-striped" data-filter-container="#filter-form-container">
                         <thead>
                             <tr>
-                                <th data-sorted="true">Due</th>
-                                <th data-sorted="true">Pri.</th>
-                                <th data-sorted="true">Name</th>
-                                <th data-sorted="true" data-breakpoints="xs">Tag</th>
-                                <th data-sorted="true" data-breakpoints="xs">Updated</th>
-                                <th data-sorted="true" data-breakpoints="xs">Action</th>
+                                <th>Due</th>
+                                <th>Pri.</th>
+                                <th>Name</th>
+                                <th data-breakpoints="xs">Tag</th>
+                                <th data-breakpoints="xs">Updated</th>
+                                <th data-breakpoints="xs">Action</th>
                             </tr>
                         </thead>
                         <tbody>
 
-                        @foreach ($project->tasks as $task)
+                        @foreach ($tasks as $task)
 
                             <tr>
                                 @isset($task->tag)

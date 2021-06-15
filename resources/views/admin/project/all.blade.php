@@ -33,7 +33,7 @@
                         </thead>
                         <tbody>
 
-                        @foreach ($project->tasks as $task)
+                        @foreach ($tasks as $task)
 
                             <tr>
                                 @if ($task->tag->use_duedate)

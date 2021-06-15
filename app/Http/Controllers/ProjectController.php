@@ -40,7 +40,10 @@ class ProjectController extends Controller
     public function all($slug)
     {
         $project = Project::where('slug', '=', $slug)->firstOrFail();
-        $tasks = Task::orderBy('due_date', 'asc')->get();
+        $tasks = Task::where('project_id', '=', $project->id)->with('tag')
+            ->orderBy('due_date')
+            ->orderBy('priority')
+            ->get();
         return view('admin.project.all')->withProject($project)->withTasks($tasks);
     }
 
@@ -93,7 +96,7 @@ class ProjectController extends Controller
         ));
 
         $project = new Project;
-        $project->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
+        $project->slug = str_random(4) . '' . \Carbon\Carbon::now()->hour . '' . str_random(4);
         $project->name = $request->name;
         $project->user_id = Auth::user()->id;
         $project->project_type = $request->channel;
@@ -103,7 +106,6 @@ class ProjectController extends Controller
         Session::flash('status', 'New Project Created');
 
         return redirect()->route('projects.create');
-
     }
 
     /**
@@ -116,7 +118,11 @@ class ProjectController extends Controller
     {
         $project = Project::where('slug', '=', $slug)->firstOrFail();
         $tags = Tag::orderBy('name')->where('project_id', '=', $project->id)->get();
-        $tasks = Task::where('project_id', '=', $project->id)->with('tag')->get();
+        $tasks = Task::where('project_id', '=', $project->id)->with('tag')
+            ->orderBy('due_date')
+            ->orderBy('priority')
+            ->get();
+
         return view('admin.project.show')->withProject($project)->withTags($tags)->withTasks($tasks);
     }
 
