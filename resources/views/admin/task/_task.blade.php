@@ -101,7 +101,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="{{url('projects/'.$project->slug)}}" class="btn btn-default">Cancel</a>
+                                <a href="{{url('projects/'.$project->slug)}}" class="btn btn-default">Close</a>
                                 <a href="#" data-toggle="modal" data-target="#{{$task->id}}" class="btn btn-default">Delete</a>
                                 <a href="{{url('projects/'.$project->slug)}}" class="btn btn-default">All Tasks</a>
                             </div>

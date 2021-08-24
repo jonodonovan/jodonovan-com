@@ -60,14 +60,14 @@ class TaskController extends Controller
         $task->project_id = $request->project_id;
         $task->name = $request->name;
         $task->tag_id = $request->tag;
-        $task->slug = str_random(4).''.\Carbon\Carbon::now()->hour.''.str_random(4);
+        $task->slug = str_random(4) . '' . \Carbon\Carbon::now()->hour . '' . str_random(4);
         $task->due_date = date('Y-m-d', strtotime("+3 days"));
 
         $task->save();
 
         Session::flash('status', 'New Task Created');
 
-        return redirect('/projects/'.$task->project->slug.'/tasks/'.$task->slug.'/edit');
+        return redirect('/projects/' . $task->project->slug . '/tasks/' . $task->slug . '/edit');
     }
 
     /**
@@ -125,8 +125,7 @@ class TaskController extends Controller
         $task->priority = $request->priority;
         $task->ticket_number = $request->ticket_number;
 
-        if($request->due_date != NULL)
-        {
+        if ($request->due_date != NULL) {
             $task->due_date = $request->due_date;
         }
         $task->completed_date = $request->completed_date;
@@ -135,7 +134,7 @@ class TaskController extends Controller
 
         Session::flash('status', 'Task Updated');
 
-        return redirect()->route('projects.show', $project);
+        return redirect()->back()->withInput();
     }
 
     /**
